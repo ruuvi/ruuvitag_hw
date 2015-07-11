@@ -1,0 +1,9 @@
+Known HW limitations:
+
+1) 16MHz crystal pinout is wrooong.
+
+FIX: Turn crystal oscillator 90 degrees to left (or right).
+
+2) Mysterious behaviour of reset pin. Not proven to happen too often, probably not an issue. DA14580 should have an internal pull-down resistor.
+
+FIX: Nope.
