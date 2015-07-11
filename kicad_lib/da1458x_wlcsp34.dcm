@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DA1458X_WLCSP34
+D BTLE SoC
+K BTLE,BT4,Smart,Dialog Semiconductor
+$ENDCMP
+#
+#End Doc Library

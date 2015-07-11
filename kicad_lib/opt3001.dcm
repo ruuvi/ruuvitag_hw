@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP OPT3001
+D OPT3001
+K ambient light sensor texas instruments
+$ENDCMP
+#
+#End Doc Library

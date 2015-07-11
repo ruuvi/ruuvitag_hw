@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AT30TS74_WLCSP
+D AT30TS74 Temp Sensor
+K temp temperature i2c sensor atmel
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,38 @@
+### Module positions - created on Wed 15 Apr 2015 03:31:04 PM ICT ###
+### Printed by Pcbnew version kicad 0.201504131001+5595~22~ubuntu14.04.1-product
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref    Val                  Package         PosX       PosY        Rot     Side
+C1                        0402_GENERAL       22.1900    -2.5700     330.0    top
+C2                        0402_GENERAL       12.8200    -3.9900     191.0    top
+C3                        0402_GENERAL        7.4400    -3.8100     214.0    top
+C4                        0402_GENERAL        3.5200   -12.1400     345.0    top
+C5                        0402_GENERAL        5.0100    -9.2100     148.0    top
+C6                        0402_GENERAL        4.1000   -22.5000     215.0    top
+C7                        0402_GENERAL       23.5000    -5.5100     227.0    top
+C8                        0402_GENERAL        3.3200    -7.8100     328.0    top
+C9                        0402_GENERAL        8.5200   -25.1900     328.0    top
+C10                       0402_GENERAL       15.9600    -3.3700     180.0    top
+C11                       0402_GENERAL       22.4800    -4.1100     325.0    top
+C12                       0402_GENERAL       22.0900    -5.6900     233.0    top
+D1       LED              0402_LED           15.0000   -29.2500     180.0    top
+G***     RUUVITAG_CURVED_ RUUVITAG_CURVED_   25.6000   -13.3100     355.0    top
+L1                        0402_GENERAL       21.1400    -5.0500      60.0    top
+L2                        0603_GENERAL       16.2100    -1.6500     175.0    top
+L3                        0402_GENERAL       24.0200    -3.8700     320.0    top
+P13      FIDUCIAL         FIDUCIAL_1MM       19.5000   -25.2000       0.0    top
+P14      FIDUCIAL         FIDUCIAL_1MM       23.4000    -7.9000       0.0    top
+R6                        0402_GENERAL        9.1500   -24.2600     328.0    top
+R7                        0402_GENERAL        3.7100   -17.3900      11.1    top
+R8                        0402_GENERAL        1.5600   -17.8100      11.1    top
+REF**    HIDDEN           HIDDEN             15.0000   -15.0000       0.0    top
+U1       DA1458X_WLCSP34  WLCSP34            18.5700    -3.1300     253.0    top
+U2       GENERIC_DATAFLAS USON8_2X3MM        10.1700    -3.5900     292.2    top
+U3       LIS331DLH        LGA16_3X3MM         5.6500    -6.7100      47.7    top
+U4       OPT3001          USON6_2X2MM_WITH    3.4400   -10.3100     156.6    top
+U5       AT30TS74_WLCSP   WLCSP4              1.6100   -11.6100     255.0    top
+U6       Si7006           DFN6_3X3MM          2.5000   -15.0000      90.0    top
+U7       MS5637           MS5637              3.4000   -20.0000     202.2    top
+U8       UVIS25           UVIS25              6.1500   -23.8500     314.4    top
+Y1       16M              32X25MM_4PIN_CRY   13.0800    -1.9700       0.0    top
+## End

@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADXL363
+D Analog Decives ADXL363
+K Accelerometer
+$ENDCMP
+#
+#End Doc Library

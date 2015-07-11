@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP UVIS25
+D UVIS25
+K uv ultraviolet light sensor stm
+$ENDCMP
+#
+#End Doc Library

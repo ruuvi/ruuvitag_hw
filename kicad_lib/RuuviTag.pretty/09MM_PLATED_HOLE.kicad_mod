@@ -1,0 +1,9 @@
+(module 09MM_PLATED_HOLE (layer F.Cu) (tedit 5514EEE5)
+  (fp_text reference REF** (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 0.5 0.5) (thickness 0.05)))
+  )
+  (fp_text value 09MM_PLATED_HOLE (at 0 0) (layer F.Fab)
+    (effects (font (size 0.5 0.5) (thickness 0.05)))
+  )
+  (pad 1 thru_hole circle (at 0 0) (size 1.3 1.3) (drill 0.9) (layers *.Cu *.Mask))
+)

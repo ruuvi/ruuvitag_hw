@@ -1,0 +1,9 @@
+(module 05MM_PLATED_RECT_HOLE (layer F.Cu) (tedit 5514EF35)
+  (fp_text reference REF** (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 0.5 0.5) (thickness 0.05)))
+  )
+  (fp_text value 05MM_PLATED_RECT_HOLE (at 0 0) (layer F.Fab)
+    (effects (font (size 0.5 0.5) (thickness 0.05)))
+  )
+  (pad 1 thru_hole rect (at 0 0) (size 0.8 0.8) (drill 0.5) (layers *.Cu *.Mask))
+)

@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Si7006
+D Si7006 Si7020 Si7021
+K Humidity sensor I2C
+$ENDCMP
+#
+#End Doc Library
