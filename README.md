@@ -1,4 +1,4 @@
-# ruuvitag_hw
+# RuuviTag: Open-Source Bluetooth Smart Sensor Beacon Platform
 You can find RuuviTag hardware design files and related documentation from this repository.
 
 * Rev.A1 is fully functional device (see ruuvitag_reva1_errata.txt).
