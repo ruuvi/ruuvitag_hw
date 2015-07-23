@@ -4,7 +4,7 @@
 
 You can find all the RuuviTag hardware design files and related documentation from this repository.
 
-* Rev.A1 is fully functional device (see ruuvitag_reva1_errata.txt).
+* Rev.A1 is a fully functional device (see ruuvitag_reva1_errata.txt).
 * Rev.A2 has some minor modifications, which are listed in the schematic sheet.
 
 We're using free and open KiCad: http://www.kicad-pcb.org/
