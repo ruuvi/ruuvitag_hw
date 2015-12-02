@@ -2,10 +2,13 @@
 
 [![RuuviTag](https://github.com/ruuvi/ruuvitag_hw/raw/master/ruuvitag_reva1.jpg)](http://ruuvi.com)
 
+[![RuuviTag Factsheet](https://github.com/ruuvi/ruuvi_brand/blob/master/ruuvitag_factsheet_2015/ruuvitag_factsheet_2015.jpg)](http://ruuvi.com)
+
 You can find all the RuuviTag hardware design files and related documentation from this repository.
 
 * Rev.A1 is a fully functional device (see ruuvitag_reva1_errata.txt).
 * Rev.A2 has some minor modifications, which are listed in the schematic sheet.
+* Rev.B1 is a completely new design. Radio SoC is Nordic Semiconductor's nRF52.
 
 We're using free and open KiCad: http://www.kicad-pcb.org/
 
