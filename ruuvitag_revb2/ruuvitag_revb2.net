@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/lauri/ruuvitag_hw/ruuvitag_revb2/ruuvitag_revb2.sch)
-    (date "2016 January 09, Saturday 11:04:54")
+    (date "2016 January 09, Saturday 12:50:43")
     (tool "Eeschema 4.0.1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -197,7 +197,7 @@
       (tstamp 55F93662))
     (comp (ref P1)
       (value ARM_DEBUG)
-      (footprint RuuviTag:ARM_DEBUG_CONNECTOR_10PIN_ALSO_SMD)
+      (footprint RuuviTag:ARM_DEBUG_CONNECTOR_10PIN)
       (libsource (lib conn) (part CONN_02X05))
       (sheetpath (names /) (tstamps /))
       (tstamp 55F98B6B))
