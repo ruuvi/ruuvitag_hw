@@ -24,10 +24,9 @@ Done:
 
 * Remove useless pull-up resistor from BUTTON1 (nRF52 has internal ones)
 * Name LED3 to LED2 in schematic
-* Mark C17 to not assembled in schematic
 * Mark C12 (connected to DEC2 pin) to not assembled (difference between PCA10036 and PCA10040)
-* Remove 0ohm resistor from antenna
 * Remove SPI DataFlash
+* Remove 0ohm resistor from antenna
 * Remove PI antenna matching network
 * 32MHz crystal from 3225 to 2016 size
 * Completely redesigned battery holder mechanism
