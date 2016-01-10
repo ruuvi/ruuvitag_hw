@@ -1,0 +1,8 @@
+<eDesignStudio Description="" ver="2" app="antenna">
+  <specification ver="1">
+    <ic ver="1" partNumber="M24xR" key="M24xR:antenna"/>
+    <antennaSpec ver="1" g_turns="8" g_length="38" g_width="8.5" g_layers="1" c_width="0.2" c_spacing="0.2" c_thickness="35" s_thickness="1.6" s_permittivity="4.4"/>
+  </specification>
+  <design/>
+  <schematic><![CDATA[]]></schematic>
+</eDesignStudio>
