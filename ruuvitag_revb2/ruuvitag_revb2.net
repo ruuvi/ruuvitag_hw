@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/lauri/ruuvitag_hw/ruuvitag_revb2/ruuvitag_revb2.sch)
-    (date "2016 January 11, Monday 11:42:34")
+    (date "2016 January 11, Monday 12:05:52")
     (tool "Eeschema 4.0.1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -251,7 +251,7 @@
       (tstamp 560195FE))
     (comp (ref Q1)
       (value Q_PMOS_GSD)
-      (footprint Housings_SOT-23_SOT-143_TSOT-6:SOT-23)
+      (footprint RuuviTag:SOT-23)
       (libsource (lib device) (part Q_PMOS_GSD))
       (sheetpath (names /) (tstamps /))
       (tstamp 560AA9DB))
