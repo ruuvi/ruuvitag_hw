@@ -2,8 +2,6 @@
 
 ### TODO
 
-* Consider to replace LEDs with LTST-C195KGJRKT or similar double LED package
-   - Need to find less than 1.8V forward voltage versions of LEDs
 * 32kHz crystal to FC-135 32.768KHZ ±20PPM,9.0PF (FC-135 32.7680KA-AC3 ?)
 * Add a PCB NFC antenna 
 * Seems that ADXL363 isn't 100% footprint compatible. We had some issues with it (used this same footprint). Confirm the footprint and probably drop the ADXL363 support.
@@ -30,3 +28,4 @@ Done:
 * Remove PI antenna matching network
 * 32MHz crystal from 3225 to 2016 size
 * Completely redesigned battery holder mechanism
+* LEDs from 0402 to 0603 (more low forward voltage choices available in 0603 size)
