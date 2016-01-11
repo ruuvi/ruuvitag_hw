@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/lauri/ruuvitag_hw/ruuvitag_revb2/ruuvitag_revb2.sch)
-    (date "2016 January 09, Saturday 12:50:43")
+    (date "2016 January 11, Monday 11:42:34")
     (tool "Eeschema 4.0.1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -23,7 +23,7 @@
       (tstamp 5502883C))
     (comp (ref D1)
       (value LED1)
-      (footprint RuuviTag:0402_LED)
+      (footprint RuuviTag:0603_LED)
       (libsource (lib device) (part LED))
       (sheetpath (names /) (tstamps /))
       (tstamp 55030C8D))
@@ -185,7 +185,7 @@
       (tstamp 55F918BF))
     (comp (ref D2)
       (value LED3)
-      (footprint RuuviTag:0402_LED)
+      (footprint RuuviTag:0603_LED)
       (libsource (lib device) (part LED))
       (sheetpath (names /) (tstamps /))
       (tstamp 55F9365C))
