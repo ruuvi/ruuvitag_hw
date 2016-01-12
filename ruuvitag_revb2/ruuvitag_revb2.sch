@@ -29,11 +29,10 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:generic_dataflash
-LIBS:adxl363
-LIBS:lis331dlh
 LIBS:4pin_crystal
 LIBS:nrf52832
 LIBS:bmxx80
+LIBS:lis3dh
 LIBS:ruuvitag_revb2-cache
 EELAYER 25 0
 EELAYER END
@@ -121,7 +120,7 @@ F 3 "" H 14900 5900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 12200 7000 0    28   Italic 0
-Accelerometer options:\n\n* H3LIS100DL: 8bit, 100g, 400Hz\n* H3LIS200DL: 8bit, 100-200g, 1kHz\n* H3LIS331DL: 12bit, 100-400g, 1kHz\n* LIS331DLH: 2-8g, 1uA sleep, 10uA 10Hz, 250uA 1kHz max datarate, 1000pcs 1EUR (Mouser)\n* LIS331HH: 12bit, 6-24g, 1uA sleep, 10uA 10Hz, 250uA 1kHz max datarate, 1000pcs 2.4EUR (Mouser)\n* LIS3DSH: 16bit, 2-16g, 2uA sleep, 11uA 3Hz, 225uA 1.6kHz max datarate, 1000pcs 1.3EUR (Mouser)\n* LIS3DH: 12bit, 2-16g, 0.5uA sleep, 2uA 1Hz, 11uA 50Hz, 5kHz max datarate, 1000pcs 0.96EUR (Mouser)\n* LIS3DE: 8bit, 2-16g, 0.5uA sleep, 2uA 1Hz, 11uA 50Hz, 5kHz max datarate, 1000pcs 0.6EUR (Mouser, not yet in stock)
+Accelerometer choices:\n\n* H3LIS100DL: 8bit, 100g, 400Hz\n* H3LIS200DL: 8bit, 100-200g, 1kHz\n* H3LIS331DL: 12bit, 100-400g, 1kHz\n* LIS331DLH: 2-8g, 1uA sleep, 10uA 10Hz, 250uA 1kHz max datarate, 1000pcs 1EUR (Mouser)\n* LIS331HH: 12bit, 6-24g, 1uA sleep, 10uA 10Hz, 250uA 1kHz max datarate, 1000pcs 2.4EUR (Mouser)\n* LIS3DSH: 16bit, 2-16g, 2uA sleep, 11uA 3Hz, 225uA 1.6kHz max datarate, 1000pcs 1.3EUR (Mouser)\n* LIS3DH: 12bit, 2-16g, 0.5uA sleep, 2uA 1Hz, 11uA 50Hz, 5kHz max datarate, 1000pcs 0.96EUR (Mouser)\n* LIS3DE: 8bit, 2-16g, 0.5uA sleep, 2uA 1Hz, 11uA 50Hz, 5kHz max datarate, 1000pcs 0.6EUR (Mouser, not yet in stock)
 Text Label 7250 5450 2    60   ~ 0
 ACC_INT1
 Text Notes 12950 2100 0    118  Italic 0
@@ -145,17 +144,6 @@ Text Notes 7950 2150 0    67   Italic 13
 http://ruuvi.com
 Text Notes 12950 7400 0    118  Italic 0
 Debug In
-$Comp
-L LIS331DLH U4
-U 1 1 5505BFA8
-P 13350 5650
-F 0 "U4" H 12800 5100 60  0000 C CNN
-F 1 "ADXL363" H 13700 5100 60  0000 C CNN
-F 2 "RuuviTag:LGA16_3X3MM" H 13350 5550 60  0001 C CNN
-F 3 "" H 13350 5550 60  0000 C CNN
-	1    13350 5650
-	1    0    0    -1  
-$EndComp
 $Comp
 L VDD #PWR03
 U 1 1 5505C50D
@@ -198,8 +186,6 @@ Text Label 9450 5550 0    60   ~ 0
 SWDCLK
 Text Label 9450 5650 0    60   ~ 0
 RESET
-Text Notes 13250 6100 0    28   Italic 0
-Optional
 $Comp
 L CONN_01X01 P9
 U 1 1 55086AF3
@@ -239,8 +225,6 @@ Text Label 9450 5850 0    60   ~ 0
 LED2
 Text Label 3075 5025 0    60   ~ 0
 LED1
-Text Notes 12350 5750 2    28   Italic 0
-ADXL363 has extra\nADC input in pin 5, but\nwe're not supporting it ->
 $Comp
 L 4PIN_CRYSTAL Y2
 U 1 1 55114156
@@ -1328,4 +1312,17 @@ Connection ~ 7200 4050
 Connection ~ 7200 4150
 Wire Wire Line
 	6600 4900 6650 4900
+Text Notes 14075 6475 0    28   Italic 0
+LIS3DH datasheet:\n\n* The ADC1, ADC2 & ADC3 if not used\ncan be left floating or keep connected to Vdd or GND.\n\n* When no communication is on-going, data on CS, SPC,\nSDI and SDO are driven by internal pull-up resistors.
+$Comp
+L LIS3DH U4
+U 1 1 569499B2
+P 13350 5650
+F 0 "U4" H 12800 5100 60  0000 C CNN
+F 1 "LIS3DH" H 13775 5100 60  0000 C CNN
+F 2 "RuuviTag:LGA16_3X3MM" H 13350 5550 60  0001 C CNN
+F 3 "" H 13350 5550 60  0000 C CNN
+	1    13350 5650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
