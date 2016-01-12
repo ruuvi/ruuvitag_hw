@@ -40,7 +40,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "RuuviTag"
-Date "2015-11-08"
+Date "2016-01-12"
 Rev "B2"
 Comp "Ruuvi Innovations Ltd. / Lauri Jämsä / lauri@ruuvi.com"
 Comment1 "License: http://creativecommons.org/licenses/by-sa/4.0/"
@@ -1109,11 +1109,7 @@ Wire Wire Line
 Wire Wire Line
 	3075 5025 2825 5025
 Wire Wire Line
-	12450 5150 12450 5250
-Wire Wire Line
-	12450 5250 12450 5350
-Wire Wire Line
-	12450 5350 12450 5450
+	12450 5150 12450 5450
 Wire Wire Line
 	12450 5250 12550 5250
 Wire Wire Line
@@ -1123,15 +1119,7 @@ Wire Wire Line
 	12450 5450 12550 5450
 Connection ~ 12450 5350
 Wire Wire Line
-	12450 5650 12450 5750
-Wire Wire Line
-	12450 5750 12450 5850
-Wire Wire Line
-	12450 5850 12450 5950
-Wire Wire Line
-	12450 5950 12450 6050
-Wire Wire Line
-	12450 6050 12450 6150
+	12450 5650 12450 6150
 Wire Wire Line
 	12450 6050 12550 6050
 Wire Wire Line
@@ -1155,9 +1143,7 @@ Wire Wire Line
 	7050 4900 7050 4650
 Connection ~ 7050 4650
 Wire Wire Line
-	7150 6550 7150 6650
-Wire Wire Line
-	7150 6650 7150 6800
+	7150 6550 7150 6800
 Wire Wire Line
 	6750 4550 6800 4550
 Wire Wire Line
@@ -1171,17 +1157,11 @@ Wire Wire Line
 Wire Wire Line
 	6800 3950 6750 3950
 Wire Wire Line
-	7100 3950 7200 3950
+	7100 3950 7250 3950
 Wire Wire Line
-	7200 3950 7250 3950
+	7100 4050 7250 4050
 Wire Wire Line
-	7100 4050 7200 4050
-Wire Wire Line
-	7200 4050 7250 4050
-Wire Wire Line
-	7100 4150 7200 4150
-Wire Wire Line
-	7200 4150 7250 4150
+	7100 4150 7250 4150
 Wire Wire Line
 	7100 4350 7250 4350
 Wire Wire Line
@@ -1195,22 +1175,16 @@ Wire Wire Line
 Wire Wire Line
 	5900 4750 5950 4750
 Wire Wire Line
-	6450 4650 7050 4650
-Wire Wire Line
-	7050 4650 7250 4650
+	6450 4650 7250 4650
 Wire Wire Line
 	6450 4750 7250 4750
 Wire Wire Line
-	6150 5200 6250 5200
-Wire Wire Line
-	6250 5200 6400 5200
+	6150 5200 6400 5200
 Wire Wire Line
 	6400 5250 7250 5250
 Connection ~ 6250 5200
 Wire Wire Line
-	6150 5400 6250 5400
-Wire Wire Line
-	6250 5400 6400 5400
+	6150 5400 6400 5400
 Connection ~ 6250 5400
 Wire Wire Line
 	8300 7100 8100 7100
@@ -1227,22 +1201,14 @@ Wire Wire Line
 Wire Wire Line
 	14250 2475 14250 2625
 Wire Wire Line
-	14000 2625 14250 2625
+	14000 2625 14400 2625
 Wire Wire Line
-	14250 2625 14400 2625
+	13350 3025 14400 3025
 Wire Wire Line
-	13350 3025 13800 3025
-Wire Wire Line
-	13800 3025 14400 3025
-Wire Wire Line
-	5850 6150 6000 6150
-Wire Wire Line
-	6000 6150 7250 6150
+	5850 6150 7250 6150
 Connection ~ 6000 6150
 Wire Wire Line
-	5850 6250 6000 6250
-Wire Wire Line
-	6000 6250 7250 6250
+	5850 6250 7250 6250
 Connection ~ 6000 6250
 Wire Wire Line
 	2325 5425 2425 5425
@@ -1263,9 +1229,7 @@ Wire Wire Line
 Connection ~ 14250 2625
 Connection ~ 13800 3025
 Wire Wire Line
-	13800 2925 13800 3025
-Wire Wire Line
-	13800 3025 13800 3125
+	13800 2925 13800 3125
 Wire Wire Line
 	2775 6325 3075 6325
 Wire Wire Line
@@ -1278,13 +1242,9 @@ Wire Wire Line
 	8425 8825 8425 8725
 Connection ~ 8425 8725
 Wire Wire Line
-	13350 2625 13400 2625
+	13350 2625 13600 2625
 Wire Wire Line
-	13400 2625 13600 2625
-Wire Wire Line
-	7425 8725 8425 8725
-Wire Wire Line
-	8425 8725 9600 8725
+	7425 8725 9600 8725
 Connection ~ 13400 2625
 Wire Wire Line
 	13350 2525 13400 2525
@@ -1302,12 +1262,8 @@ F 3 "" H 5650 6200 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 3850 7200 3950
+	7200 3850 7200 4150
 Connection ~ 7200 3950
-Wire Wire Line
-	7200 3975 7200 4050
-Wire Wire Line
-	7200 4050 7200 4150
 Connection ~ 7200 4050
 Connection ~ 7200 4150
 Wire Wire Line
