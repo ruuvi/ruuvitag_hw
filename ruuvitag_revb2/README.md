@@ -3,8 +3,6 @@
 ### TODO
 
 * 32kHz crystal to FC-135 32.768KHZ ±20PPM,9.0PF (FC-135 32.7680KA-AC3 ?)
-* Add a PCB NFC antenna 
-* Seems that ADXL363 isn't 100% footprint compatible. We had some issues with it (used this same footprint). Confirm the footprint and probably drop the ADXL363 support.
 * 32k osc caps to 2% (mark to BOM)
 * Add more test points if space
 * Add accelerometer INT2 if routing is easy
@@ -32,3 +30,5 @@ Done:
 * 32MHz crystal from 3225 to 2016 size
 * Completely redesigned battery holder mechanism
 * LEDs from 0402 to 0603 (more low forward voltage choices available in 0603 size)
+* Add a PCB NFC antenna 
+* Fix accelerometer's footprint (LGA-16) according STM's TN0018 application note. ADXL363 not supported any more (but probably reflows correctly anyways)
