@@ -1,4 +1,4 @@
-update=2015 December 22, Tuesday 10:31:41
+update=2016 January 12, Tuesday 09:54:11
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,8 +59,7 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=generic_dataflash
-LibName31=adxl363
-LibName32=lis331dlh
-LibName33=4pin_crystal
-LibName34=nrf52832
-LibName35=bmxx80
+LibName31=4pin_crystal
+LibName32=nrf52832
+LibName33=bmxx80
+LibName34=lis3dh
