@@ -1,4 +1,4 @@
-(module 0402_GENERAL (layer F.Cu) (tedit 56910FE0)
+(module 0402_GENERAL (layer F.Cu) (tedit 5695EDCA)
   (tags 0402)
   (attr smd)
   (fp_text reference REF** (at 0 0) (layer F.SilkS)
@@ -7,8 +7,8 @@
   (fp_text value 0402_GENERAL (at 0 0) (layer F.Fab)
     (effects (font (size 0.25 0.25) (thickness 0.025)))
   )
-  (fp_line (start -0.1 0.25) (end 0.1 0.25) (layer F.SilkS) (width 0.1))
-  (fp_line (start -0.1 -0.25) (end 0.1 -0.25) (layer F.SilkS) (width 0.1))
+  (fp_line (start -0.05 0.25) (end 0.05 0.25) (layer F.SilkS) (width 0.1))
+  (fp_line (start -0.05 -0.25) (end 0.05 -0.25) (layer F.SilkS) (width 0.1))
   (pad 1 smd rect (at -0.55 0) (size 0.5 0.5) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 0.55 0) (size 0.5 0.5) (layers F.Cu F.Paste F.Mask))
   (model /media/sf_Dropbox/Projektit/RuuviTag/kicad_lib/3d/0402_50trans_general.wrl
