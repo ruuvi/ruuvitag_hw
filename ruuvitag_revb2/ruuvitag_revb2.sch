@@ -40,7 +40,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "RuuviTag"
-Date "2016-01-12"
+Date "2016-01-13"
 Rev "B2"
 Comp "Ruuvi Innovations Ltd. / Lauri Jämsä / lauri@ruuvi.com"
 Comment1 "License: http://creativecommons.org/licenses/by-sa/4.0/"
@@ -95,31 +95,31 @@ Text Notes 1825 4625 0    118  Italic 0
 LEDs & Buttons
 Text Label 11125 3950 0    60   ~ 0
 ANTENNA
-Text Label 7425 8725 2    60   ~ 0
+Text Label 7325 8775 2    60   ~ 0
 ANTENNA
 $Comp
 L C C18
 U 1 1 550326A7
-P 14900 5700
-F 0 "C18" H 14925 5800 50  0000 L CNN
-F 1 "4u7" H 14925 5600 50  0000 L CNN
-F 2 "RuuviTag:0603_GENERAL" H 14938 5550 30  0001 C CNN
-F 3 "" H 14900 5700 60  0000 C CNN
-	1    14900 5700
+P 15000 5725
+F 0 "C18" H 15025 5825 50  0000 L CNN
+F 1 "4u7" H 15025 5625 50  0000 L CNN
+F 2 "RuuviTag:0603_GENERAL" H 15038 5575 30  0001 C CNN
+F 3 "" H 15000 5725 60  0000 C CNN
+	1    15000 5725
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR39
 U 1 1 550326B3
-P 14900 5900
-F 0 "#PWR39" H 14900 5650 60  0001 C CNN
-F 1 "GND" H 14900 5750 60  0000 C CNN
-F 2 "" H 14900 5900 60  0000 C CNN
-F 3 "" H 14900 5900 60  0000 C CNN
-	1    14900 5900
+P 15000 5925
+F 0 "#PWR39" H 15000 5675 60  0001 C CNN
+F 1 "GND" H 15000 5775 60  0000 C CNN
+F 2 "" H 15000 5925 60  0000 C CNN
+F 3 "" H 15000 5925 60  0000 C CNN
+	1    15000 5925
 	1    0    0    -1  
 $EndComp
-Text Notes 12200 7000 0    28   Italic 0
+Text Notes 12300 7025 0    28   Italic 0
 Accelerometer choices:\n\n* H3LIS100DL: 8bit, 100g, 400Hz\n* H3LIS200DL: 8bit, 100-200g, 1kHz\n* H3LIS331DL: 12bit, 100-400g, 1kHz\n* LIS331DLH: 2-8g, 1uA sleep, 10uA 10Hz, 250uA 1kHz max datarate, 1000pcs 1EUR (Mouser)\n* LIS331HH: 12bit, 6-24g, 1uA sleep, 10uA 10Hz, 250uA 1kHz max datarate, 1000pcs 2.4EUR (Mouser)\n* LIS3DSH: 16bit, 2-16g, 2uA sleep, 11uA 3Hz, 225uA 1.6kHz max datarate, 1000pcs 1.3EUR (Mouser)\n* LIS3DH: 12bit, 2-16g, 0.5uA sleep, 2uA 1Hz, 11uA 50Hz, 5kHz max datarate, 1000pcs 0.96EUR (Mouser)\n* LIS3DE: 8bit, 2-16g, 0.5uA sleep, 2uA 1Hz, 11uA 50Hz, 5kHz max datarate, 1000pcs 0.6EUR (Mouser, not yet in stock)
 Text Label 7250 5450 2    60   ~ 0
 ACC_INT1
@@ -128,12 +128,12 @@ Power Source
 $Comp
 L VDD #PWR38
 U 1 1 5504318C
-P 14900 5450
-F 0 "#PWR38" H 14900 5300 60  0001 C CNN
-F 1 "VDD" H 14900 5600 60  0000 C CNN
-F 2 "" H 14900 5450 60  0000 C CNN
-F 3 "" H 14900 5450 60  0000 C CNN
-	1    14900 5450
+P 15000 5475
+F 0 "#PWR38" H 15000 5325 60  0001 C CNN
+F 1 "VDD" H 15000 5625 60  0000 C CNN
+F 2 "" H 15000 5475 60  0000 C CNN
+F 3 "" H 15000 5475 60  0000 C CNN
+	1    15000 5475
 	1    0    0    -1  
 $EndComp
 Text Label 9450 6650 0    60   ~ 0
@@ -142,43 +142,43 @@ Text Notes 6600 1900 0    98   Italic 20
 Open Source Bluetooth Smart Sensor Beacon
 Text Notes 7950 2150 0    67   Italic 13
 http://ruuvi.com
-Text Notes 12950 7400 0    118  Italic 0
+Text Notes 12950 8325 0    118  Italic 0
 Debug In
 $Comp
 L VDD #PWR30
 U 1 1 5505C50D
-P 12450 5150
-F 0 "#PWR30" H 12450 5000 60  0001 C CNN
-F 1 "VDD" H 12450 5300 60  0000 C CNN
-F 2 "" H 12450 5150 60  0000 C CNN
-F 3 "" H 12450 5150 60  0000 C CNN
-	1    12450 5150
+P 12550 5175
+F 0 "#PWR30" H 12550 5025 60  0001 C CNN
+F 1 "VDD" H 12550 5325 60  0000 C CNN
+F 2 "" H 12550 5175 60  0000 C CNN
+F 3 "" H 12550 5175 60  0000 C CNN
+	1    12550 5175
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR31
 U 1 1 5505C7DA
-P 12450 6150
-F 0 "#PWR31" H 12450 5900 60  0001 C CNN
-F 1 "GND" H 12450 6000 60  0000 C CNN
-F 2 "" H 12450 6150 60  0000 C CNN
-F 3 "" H 12450 6150 60  0000 C CNN
-	1    12450 6150
+P 12550 6175
+F 0 "#PWR31" H 12550 5925 60  0001 C CNN
+F 1 "GND" H 12550 6025 60  0000 C CNN
+F 2 "" H 12550 6175 60  0000 C CNN
+F 3 "" H 12550 6175 60  0000 C CNN
+	1    12550 6175
 	1    0    0    -1  
 $EndComp
-Text Label 14150 5350 0    60   ~ 0
+Text Label 14250 5375 0    60   ~ 0
 ACC_INT1
-NoConn ~ 14150 5500
-NoConn ~ 14150 5600
-Text Label 14150 5750 0    60   ~ 0
+NoConn ~ 14250 5525
+NoConn ~ 14250 5625
+Text Label 14250 5775 0    60   ~ 0
 SPI_ACC_CS
-Text Label 14150 5850 0    60   ~ 0
+Text Label 14250 5875 0    60   ~ 0
 SPI_MISO
-Text Label 14150 5950 0    60   ~ 0
+Text Label 14250 5975 0    60   ~ 0
 SPI_MOSI
-Text Label 14150 6050 0    60   ~ 0
+Text Label 14250 6075 0    60   ~ 0
 SPI_SCK
-Text Notes 12750 4800 0    118  Italic 0
+Text Notes 12850 4825 0    118  Italic 0
 Accelerometer
 Text Label 9450 5450 0    60   ~ 0
 SWDIO
@@ -236,7 +236,7 @@ F 3 "" H 8400 7200 60  0000 C CNN
 	1    8400 7150
 	1    0    0    -1  
 $EndComp
-Text Notes 6675 10375 0    28   Italic 0
+Text Notes 6575 10425 0    28   Italic 0
 Nordic Semiconductor's 1/4 wavelength monopole antenna design guide states:\nWhen implementing the monopole as a trace on the PCB, the length of the trace should be extended somewhat to allow for some fine-tuning of the antenna to\nresonance at 2.45GHz. If the size of available ground plane is approaching the ideal size and the antenna trace is uniformly surrounded by the FR4 substrate, then\nthe length of the trace should be extended by about 20%. If the ground plane size is considerably smaller than the ideal size and/or much of the antenna trace is\nrouted close to the edge of the PCB, then the length of the antenna trace should be extended by about 30%. \n\nTheoretical length: L = 92mm / 4 = 23mm      -> 23mm * 1.3 = 30mm.\n\nThere are the following two methods to tune an antenna:\n\n• If the physical dimensions of the antenna can be altered, for example, witha PCB antenna, adjusting the length will be one part of the tuning.\nAnother part is to add a component, inductor, or capacitor, to pull the antenna impedance towards the 50 ohm center point.\n\n• If the antenna cannot be altered physically, more external components must be used to tune the antenna.\nThese external components are called the matching network.\n\nIf it is not possible to get the impedance exactly 50 ohm by adjusting the length of the antenna, a component must be used to pull the impedance to the 50 ohm point.\nIt is preferable to use a shunt capacitor since a capacitor is cheaper than an inductor and because a shunt component can be removed without any impact.\n\nFor more info, check Nordic Semiconductor's White Paper about antenna tuning: Google "nWP-017_Antenna_Tuning"
 $Comp
 L CONN_01X01 P6
@@ -633,7 +633,7 @@ F 3 "" H 6000 5850 60  0000 C CNN
 	1    6000 5850
 	-1   0    0    1   
 $EndComp
-Text Notes 5850 6750 2    28   Italic 0
+Text Notes 5775 6800 2    28   Italic 0
 Battery protection!\n\nIf the antenna is exposed to a strong NFC field\ncurrent may flow in the opposite direction on the\nsupply due to parasitic diodes and ESD structures.\n\nIf the battery used does not tolerate return current,\na series diode must be placed between the battery\nand the device in order to protect the battery.
 Text Notes 5850 4800 2    28   Italic 0
 High frequency chip inductor ±10% ->\n\n\n\nChip inductor, IDC,min = 50 mA, ±20% ->
@@ -757,7 +757,7 @@ F 3 "" H 4100 9025 60  0000 C CNN
 	1    4100 9025
 	1    0    0    -1  
 $EndComp
-NoConn ~ 14150 5250
+NoConn ~ 14250 5275
 Text Label 9450 6050 0    60   ~ 0
 LED1
 $Comp
@@ -787,65 +787,65 @@ LED2
 $Comp
 L CONN_02X05 P1
 U 1 1 55F98B6B
-P 13350 7900
-F 0 "P1" H 13350 8200 50  0000 C CNN
-F 1 "ARM_DEBUG" H 13350 7600 50  0000 C CNN
-F 2 "RuuviTag:ARM_DEBUG_CONNECTOR_10PIN" H 13350 6700 60  0001 C CNN
-F 3 "" H 13350 6700 60  0000 C CNN
-	1    13350 7900
+P 13350 8825
+F 0 "P1" H 13350 9125 50  0000 C CNN
+F 1 "ARM_DEBUG" H 13350 8525 50  0000 C CNN
+F 2 "RuuviTag:ARM_DEBUG_CONNECTOR_10PIN" H 13350 7625 60  0001 C CNN
+F 3 "" H 13350 7625 60  0000 C CNN
+	1    13350 8825
 	1    0    0    -1  
 $EndComp
 $Comp
 L VDD #PWR32
 U 1 1 55F98FFD
-P 13100 7700
-F 0 "#PWR32" H 13100 7550 60  0001 C CNN
-F 1 "VDD" V 13100 7925 60  0000 C CNN
-F 2 "" H 13100 7700 60  0000 C CNN
-F 3 "" H 13100 7700 60  0000 C CNN
-	1    13100 7700
+P 13100 8625
+F 0 "#PWR32" H 13100 8475 60  0001 C CNN
+F 1 "VDD" V 13100 8850 60  0000 C CNN
+F 2 "" H 13100 8625 60  0000 C CNN
+F 3 "" H 13100 8625 60  0000 C CNN
+	1    13100 8625
 	0    -1   -1   0   
 $EndComp
 $Comp
 L GND #PWR35
 U 1 1 55F99332
-P 13100 8100
-F 0 "#PWR35" H 13100 7850 60  0001 C CNN
-F 1 "GND" V 13100 7875 60  0000 C CNN
-F 2 "" H 13100 8100 60  0000 C CNN
-F 3 "" H 13100 8100 60  0000 C CNN
-	1    13100 8100
+P 13100 9025
+F 0 "#PWR35" H 13100 8775 60  0001 C CNN
+F 1 "GND" V 13100 8800 60  0000 C CNN
+F 2 "" H 13100 9025 60  0000 C CNN
+F 3 "" H 13100 9025 60  0000 C CNN
+	1    13100 9025
 	0    1    1    0   
 $EndComp
 $Comp
 L GND #PWR34
 U 1 1 55F9942D
-P 13100 7900
-F 0 "#PWR34" H 13100 7650 60  0001 C CNN
-F 1 "GND" V 13100 7675 60  0000 C CNN
-F 2 "" H 13100 7900 60  0000 C CNN
-F 3 "" H 13100 7900 60  0000 C CNN
-	1    13100 7900
+P 13100 8825
+F 0 "#PWR34" H 13100 8575 60  0001 C CNN
+F 1 "GND" V 13100 8600 60  0000 C CNN
+F 2 "" H 13100 8825 60  0000 C CNN
+F 3 "" H 13100 8825 60  0000 C CNN
+	1    13100 8825
 	0    1    1    0   
 $EndComp
 $Comp
 L GND #PWR33
 U 1 1 55F99528
-P 13100 7800
-F 0 "#PWR33" H 13100 7550 60  0001 C CNN
-F 1 "GND" V 13100 7575 60  0000 C CNN
-F 2 "" H 13100 7800 60  0000 C CNN
-F 3 "" H 13100 7800 60  0000 C CNN
-	1    13100 7800
+P 13100 8725
+F 0 "#PWR33" H 13100 8475 60  0001 C CNN
+F 1 "GND" V 13100 8500 60  0000 C CNN
+F 2 "" H 13100 8725 60  0000 C CNN
+F 3 "" H 13100 8725 60  0000 C CNN
+	1    13100 8725
 	0    1    1    0   
 $EndComp
-NoConn ~ 13100 8000
-Text Label 13600 7700 0    60   ~ 0
+NoConn ~ 13100 8925
+Text Label 13600 8625 0    60   ~ 0
 SWDIO
-Text Label 13600 7800 0    60   ~ 0
+Text Label 13600 8725 0    60   ~ 0
 SWDCLK
-NoConn ~ 13600 8000
-Text Label 13600 8100 0    60   ~ 0
+NoConn ~ 13600 8925
+Text Label 13600 9025 0    60   ~ 0
 RESET
 NoConn ~ 9450 5750
 NoConn ~ 9450 6150
@@ -906,7 +906,7 @@ NoConn ~ 7250 5750
 NoConn ~ 7250 5850
 Text Label 9450 5950 0    60   ~ 0
 SWO
-Text Label 13600 7900 0    60   ~ 0
+Text Label 13600 8825 0    60   ~ 0
 SWO
 Text Notes 9850 5500 0    28   Italic 0
 The SWDIO line has an internal pull-up resistor.\nThe SWDCLK line has an internal pull-down resistor.
@@ -1013,26 +1013,26 @@ $EndComp
 $Comp
 L C C19
 U 1 1 55FBEE6D
-P 8425 8975
-F 0 "C19" H 8450 9075 50  0000 L CNN
-F 1 "NA" H 8450 8875 50  0000 L CNN
-F 2 "RuuviTag:0402_GENERAL" H 8463 8825 30  0001 C CNN
-F 3 "" H 8425 8975 60  0000 C CNN
-	1    8425 8975
+P 8325 9025
+F 0 "C19" H 8350 9125 50  0000 L CNN
+F 1 "NA" H 8350 8925 50  0000 L CNN
+F 2 "RuuviTag:0402_GENERAL" H 8363 8875 30  0001 C CNN
+F 3 "" H 8325 9025 60  0000 C CNN
+	1    8325 9025
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR26
 U 1 1 55FBEE73
-P 8425 9125
-F 0 "#PWR26" H 8425 8875 60  0001 C CNN
-F 1 "GND" H 8425 8975 60  0000 C CNN
-F 2 "" H 8425 9125 60  0000 C CNN
-F 3 "" H 8425 9125 60  0000 C CNN
-	1    8425 9125
+P 8325 9175
+F 0 "#PWR26" H 8325 8925 60  0001 C CNN
+F 1 "GND" H 8325 9025 60  0000 C CNN
+F 2 "" H 8325 9175 60  0000 C CNN
+F 3 "" H 8325 9175 60  0000 C CNN
+	1    8325 9175
 	1    0    0    -1  
 $EndComp
-Text Notes 8075 8150 0    118  Italic 0
+Text Notes 8000 8200 0    118  Italic 0
 Antenna
 $Comp
 L Q_PMOS_GSD Q1
@@ -1049,7 +1049,7 @@ NoConn ~ 9450 5150
 NoConn ~ 9450 5350
 NoConn ~ 9450 6550
 NoConn ~ 7250 5650
-Text Notes 8700 9025 0    28   Italic 0
+Text Notes 8600 9075 0    28   Italic 0
 Shunt capacitor or inductor. For convenience, a shunt capacitor is preferred.\nA shunt can be removed without changing the rest of the circuit and a\ncapacitor is cheaper than an inductor.
 $Comp
 L CONN_01X01 P5
@@ -1063,77 +1063,89 @@ F 3 "" H 13150 3025 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Notes Line
+	9500 8675 9500 8625
+Wire Notes Line
+	9500 8625 9600 8625
+Wire Notes Line
 	9600 8625 9600 8575
 Wire Notes Line
-	9600 8575 9700 8575
+	9600 8575 9400 8575
 Wire Notes Line
-	9700 8575 9700 8525
+	9400 8575 9400 8525
 Wire Notes Line
-	9700 8525 9500 8525
+	9400 8525 9600 8525
 Wire Notes Line
-	9500 8525 9500 8475
+	9600 8525 9600 8475
 Wire Notes Line
-	9500 8475 9700 8475
+	9600 8475 9400 8475
 Wire Notes Line
-	9700 8475 9700 8425
+	9400 8475 9400 8425
 Wire Notes Line
-	9700 8425 9500 8425
+	9400 8425 9600 8425
 Wire Notes Line
-	9500 8425 9500 8375
+	9600 8425 9600 8375
 Wire Notes Line
-	9500 8375 9700 8375
+	9600 8375 9400 8375
 Wire Notes Line
-	9700 8375 9700 8325
+	9400 8375 9400 8325
 Wire Notes Line
-	9700 8325 9500 8325
+	9400 8325 9600 8325
 Wire Notes Line
-	9500 8325 9500 8275
+	9600 8325 9600 8275
 Wire Notes Line
-	9500 8275 9700 8275
+	9600 8275 9400 8275
 Wire Notes Line
-	9700 8275 9700 8225
+	9400 8275 9400 8225
 Wire Notes Line
-	9700 8225 9500 8225
-Wire Notes Line
-	9500 8225 9500 8175
-Wire Notes Line
-	9500 8175 9600 8175
+	9400 8225 9500 8225
 Wire Wire Line
 	2325 5025 2425 5025
 Wire Wire Line
 	1925 5025 2025 5025
 Wire Wire Line
-	14900 5450 14900 5550
+	15000 5475 15000 5575
 Wire Wire Line
-	14900 5900 14900 5850
+	15000 5925 15000 5875
 Wire Wire Line
 	3075 5025 2825 5025
 Wire Wire Line
-	12450 5150 12450 5450
+	12550 5175 12550 5275
 Wire Wire Line
-	12450 5250 12550 5250
+	12550 5275 12550 5375
 Wire Wire Line
-	12450 5350 12550 5350
-Connection ~ 12450 5250
+	12550 5375 12550 5475
 Wire Wire Line
-	12450 5450 12550 5450
-Connection ~ 12450 5350
+	12550 5275 12650 5275
 Wire Wire Line
-	12450 5650 12450 6150
+	12550 5375 12650 5375
+Connection ~ 12550 5275
 Wire Wire Line
-	12450 6050 12550 6050
+	12550 5475 12650 5475
+Connection ~ 12550 5375
 Wire Wire Line
-	12450 5950 12550 5950
-Connection ~ 12450 6050
+	12550 5675 12550 5775
 Wire Wire Line
-	12450 5850 12550 5850
-Connection ~ 12450 5950
+	12550 5775 12550 5875
 Wire Wire Line
-	12450 5750 12550 5750
-Connection ~ 12450 5850
+	12550 5875 12550 5975
 Wire Wire Line
-	12450 5650 12550 5650
-Connection ~ 12450 5750
+	12550 5975 12550 6075
+Wire Wire Line
+	12550 6075 12550 6175
+Wire Wire Line
+	12550 6075 12650 6075
+Wire Wire Line
+	12550 5975 12650 5975
+Connection ~ 12550 6075
+Wire Wire Line
+	12550 5875 12650 5875
+Connection ~ 12550 5975
+Wire Wire Line
+	12550 5775 12650 5775
+Connection ~ 12550 5875
+Wire Wire Line
+	12550 5675 12650 5675
+Connection ~ 12550 5775
 Wire Wire Line
 	7250 6550 7150 6550
 Wire Wire Line
@@ -1143,7 +1155,9 @@ Wire Wire Line
 	7050 4900 7050 4650
 Connection ~ 7050 4650
 Wire Wire Line
-	7150 6550 7150 6800
+	7150 6550 7150 6650
+Wire Wire Line
+	7150 6650 7150 6800
 Wire Wire Line
 	6750 4550 6800 4550
 Wire Wire Line
@@ -1157,11 +1171,17 @@ Wire Wire Line
 Wire Wire Line
 	6800 3950 6750 3950
 Wire Wire Line
-	7100 3950 7250 3950
+	7100 3950 7200 3950
 Wire Wire Line
-	7100 4050 7250 4050
+	7200 3950 7250 3950
 Wire Wire Line
-	7100 4150 7250 4150
+	7100 4050 7200 4050
+Wire Wire Line
+	7200 4050 7250 4050
+Wire Wire Line
+	7100 4150 7200 4150
+Wire Wire Line
+	7200 4150 7250 4150
 Wire Wire Line
 	7100 4350 7250 4350
 Wire Wire Line
@@ -1175,16 +1195,22 @@ Wire Wire Line
 Wire Wire Line
 	5900 4750 5950 4750
 Wire Wire Line
-	6450 4650 7250 4650
+	6450 4650 7050 4650
+Wire Wire Line
+	7050 4650 7250 4650
 Wire Wire Line
 	6450 4750 7250 4750
 Wire Wire Line
-	6150 5200 6400 5200
+	6150 5200 6250 5200
+Wire Wire Line
+	6250 5200 6400 5200
 Wire Wire Line
 	6400 5250 7250 5250
 Connection ~ 6250 5200
 Wire Wire Line
-	6150 5400 6400 5400
+	6150 5400 6250 5400
+Wire Wire Line
+	6250 5400 6400 5400
 Connection ~ 6250 5400
 Wire Wire Line
 	8300 7100 8100 7100
@@ -1197,18 +1223,26 @@ Wire Wire Line
 Wire Wire Line
 	6950 4900 7050 4900
 Wire Wire Line
-	9600 8725 9600 8625
+	9500 8775 9500 8675
 Wire Wire Line
 	14250 2475 14250 2625
 Wire Wire Line
-	14000 2625 14400 2625
+	14000 2625 14250 2625
 Wire Wire Line
-	13350 3025 14400 3025
+	14250 2625 14400 2625
 Wire Wire Line
-	5850 6150 7250 6150
+	13350 3025 13800 3025
+Wire Wire Line
+	13800 3025 14400 3025
+Wire Wire Line
+	5200 6150 6000 6150
+Wire Wire Line
+	6000 6150 7250 6150
 Connection ~ 6000 6150
 Wire Wire Line
-	5850 6250 7250 6250
+	5200 6250 6000 6250
+Wire Wire Line
+	6000 6250 7250 6250
 Connection ~ 6000 6250
 Wire Wire Line
 	2325 5425 2425 5425
@@ -1229,7 +1263,9 @@ Wire Wire Line
 Connection ~ 14250 2625
 Connection ~ 13800 3025
 Wire Wire Line
-	13800 2925 13800 3125
+	13800 2925 13800 3025
+Wire Wire Line
+	13800 3025 13800 3125
 Wire Wire Line
 	2775 6325 3075 6325
 Wire Wire Line
@@ -1239,12 +1275,16 @@ Wire Wire Line
 Wire Wire Line
 	9450 4850 9900 4850
 Wire Wire Line
-	8425 8825 8425 8725
-Connection ~ 8425 8725
+	8325 8875 8325 8775
+Connection ~ 8325 8775
 Wire Wire Line
-	13350 2625 13600 2625
+	13350 2625 13400 2625
 Wire Wire Line
-	7425 8725 9600 8725
+	13400 2625 13600 2625
+Wire Wire Line
+	7325 8775 8325 8775
+Wire Wire Line
+	8325 8775 9500 8775
 Connection ~ 13400 2625
 Wire Wire Line
 	13350 2525 13400 2525
@@ -1253,32 +1293,36 @@ Wire Wire Line
 $Comp
 L CONN_01X02 P4
 U 1 1 560195FE
-P 5650 6200
-F 0 "P4" H 5825 6200 50  0000 C CNN
-F 1 "NFC" H 6000 6200 50  0000 C CNN
-F 2 "RuuviTag:NFC_RUUVITAG_REVB2" H 5650 6200 60  0001 C CNN
-F 3 "" H 5650 6200 60  0000 C CNN
-	1    5650 6200
+P 5000 6200
+F 0 "P4" H 5175 6200 50  0000 C CNN
+F 1 "NFC" H 5350 6200 50  0000 C CNN
+F 2 "RuuviTag:NFC_RUUVITAG_REVB2" H 5000 6200 60  0001 C CNN
+F 3 "" H 5000 6200 60  0000 C CNN
+	1    5000 6200
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 3850 7200 4150
+	7200 3850 7200 3950
+Wire Wire Line
+	7200 3950 7200 4050
+Wire Wire Line
+	7200 4050 7200 4150
 Connection ~ 7200 3950
 Connection ~ 7200 4050
 Connection ~ 7200 4150
 Wire Wire Line
 	6600 4900 6650 4900
-Text Notes 14075 6475 0    28   Italic 0
+Text Notes 14175 6500 0    28   Italic 0
 LIS3DH datasheet:\n\n* The ADC1, ADC2 & ADC3 if not used\ncan be left floating or keep connected to Vdd or GND.\n\n* When no communication is on-going, data on CS, SPC,\nSDI and SDO are driven by internal pull-up resistors.
 $Comp
 L LIS3DH U4
 U 1 1 569499B2
-P 13350 5650
-F 0 "U4" H 12800 5100 60  0000 C CNN
-F 1 "LIS3DH" H 13775 5100 60  0000 C CNN
-F 2 "RuuviTag:LGA16_3X3MM" H 13350 5550 60  0001 C CNN
-F 3 "" H 13350 5550 60  0000 C CNN
-	1    13350 5650
+P 13450 5675
+F 0 "U4" H 12900 5125 60  0000 C CNN
+F 1 "LIS3DH" H 13875 5125 60  0000 C CNN
+F 2 "RuuviTag:LGA16_3X3MM" H 13450 5575 60  0001 C CNN
+F 3 "" H 13450 5575 60  0000 C CNN
+	1    13450 5675
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1306,9 +1350,13 @@ $EndComp
 Wire Wire Line
 	10300 4000 10300 3950
 Wire Wire Line
-	9450 3950 10375 3950
+	9450 3950 10300 3950
 Wire Wire Line
-	10300 4300 10300 4400
+	10300 3950 10375 3950
+Wire Wire Line
+	10300 4300 10300 4350
+Wire Wire Line
+	10300 4350 10300 4400
 Wire Wire Line
 	10300 4350 10125 4350
 Wire Wire Line
@@ -1329,4 +1377,6 @@ Wire Notes Line
 	10950 4600 10050 4600
 Text Notes 10050 3725 0    28   Italic 0
 nRF52 side matching
+Text Notes 4400 5825 0    118  Italic 0
+NFC Antenna
 $EndSCHEMATC
