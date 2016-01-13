@@ -86,4 +86,9 @@
     (zone_connect 0))
   (pad ~ smd rect (at -1.5 1.5) (size 1 1) (layers F.Paste)
     (zone_connect 0))
+  (model Housings_DFN_QFN.3dshapes/UQFN-48-1EP_6x6mm_Pitch0.4mm.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

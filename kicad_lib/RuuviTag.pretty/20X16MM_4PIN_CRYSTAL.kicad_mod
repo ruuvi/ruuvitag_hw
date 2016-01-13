@@ -16,4 +16,9 @@
   (pad 1 smd rect (at -0.725 0.575) (size 0.95 0.85) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 0.725 0.575) (size 0.95 0.85) (layers F.Cu F.Paste F.Mask))
   (pad 3 smd rect (at 0.725 -0.575) (size 0.95 0.85) (layers F.Cu F.Paste F.Mask))
+  (model Oscillators.3dshapes/KXO-200.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 0.1 0.1 0.1))
+    (rotate (xyz 0 0 0))
+  )
 )
