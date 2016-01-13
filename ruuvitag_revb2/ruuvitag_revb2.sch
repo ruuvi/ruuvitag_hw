@@ -136,7 +136,7 @@ F 3 "" H 15000 5475 60  0000 C CNN
 	1    15000 5475
 	1    0    0    -1  
 $EndComp
-Text Label 9450 6650 0    60   ~ 0
+Text Label 7250 5850 2    60   ~ 0
 SPI_ACC_CS
 Text Notes 6600 1900 0    98   Italic 20
 Open Source Bluetooth Smart Sensor Beacon
@@ -903,7 +903,6 @@ NoConn ~ 9450 4350
 NoConn ~ 9450 4450
 NoConn ~ 9450 5250
 NoConn ~ 7250 5750
-NoConn ~ 7250 5850
 Text Label 9450 5950 0    60   ~ 0
 SWO
 Text Label 13600 8825 0    60   ~ 0

@@ -32,3 +32,4 @@ Done:
 * LEDs from 0402 to 0603 (more low forward voltage choices available in 0603 size)
 * Add a PCB NFC antenna 
 * Fix accelerometer's footprint (LGA-16) according STM's TN0018 application note. ADXL363 not supported any more (but probably reflows correctly anyways)
+* SPI_ACC_CS from P0.11 to P0.06
