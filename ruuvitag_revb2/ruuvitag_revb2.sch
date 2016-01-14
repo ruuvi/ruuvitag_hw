@@ -136,7 +136,7 @@ F 3 "" H 15050 5675 60  0000 C CNN
 	1    15050 5675
 	1    0    0    -1  
 $EndComp
-Text Label 7250 5950 2    60   ~ 0
+Text Label 7250 6050 2    60   ~ 0
 SPI_ACC_CS
 Text Notes 6600 1900 0    98   Italic 20
 Open Source Bluetooth Smart Sensor Beacon
@@ -877,28 +877,6 @@ F 3 "" H 1800 5575 60  0000 C CNN
 $EndComp
 Text Label 9450 6450 0    60   ~ 0
 BUTTON1
-$Comp
-L CONN_01X01 P2
-U 1 1 55FA012E
-P 7050 5850
-F 0 "P2" H 7350 5850 50  0000 C CNN
-F 1 "TP" H 7175 5850 50  0000 C CNN
-F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 7050 5850 60  0001 C CNN
-F 3 "" H 7050 5850 60  0000 C CNN
-	1    7050 5850
-	-1   0    0    1   
-$EndComp
-$Comp
-L CONN_01X01 P3
-U 1 1 55FA0486
-P 7050 6050
-F 0 "P3" H 7350 6050 50  0000 C CNN
-F 1 "TP" H 7175 6050 50  0000 C CNN
-F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 7050 6050 60  0001 C CNN
-F 3 "" H 7050 6050 60  0000 C CNN
-	1    7050 6050
-	-1   0    0    1   
-$EndComp
 NoConn ~ 9450 4350
 NoConn ~ 9450 4450
 NoConn ~ 9450 5250
@@ -1327,4 +1305,6 @@ F 3 "" H 7050 5750 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 NoConn ~ 9450 6650
+NoConn ~ 7250 5950
+NoConn ~ 7250 5850
 $EndSCHEMATC
