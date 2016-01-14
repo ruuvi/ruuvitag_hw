@@ -1,5 +1,4 @@
 (module 20X16MM_4PIN_CRYSTAL (layer F.Cu) (tedit 5695EE52)
-  (solder_mask_margin 0.05)
   (solder_paste_margin -0.05)
   (attr smd)
   (fp_text reference REF** (at 0 0) (layer F.SilkS)
