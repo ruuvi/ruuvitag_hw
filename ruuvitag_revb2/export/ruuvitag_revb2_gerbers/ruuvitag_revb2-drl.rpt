@@ -1,5 +1,5 @@
 Drill report for /Users/lauri/ruuvitag_hw/ruuvitag_revb2/ruuvitag_revb2.kicad_pcb
-Created on 2016 January 15, Friday 10:31:41
+Created on 2016 January 15, Friday 23:21:42
 
 Copper Layer Stackup:
     =============================================================
@@ -12,12 +12,12 @@ Copper Layer Stackup:
 Drill file 'ruuvitag_revb2.drl' contains
     plated through holes:
     =============================================================
-    T1  0.30mm  0.012"  (81 holes)
+    T1  0.30mm  0.012"  (82 holes)
     T2  0.50mm  0.020"  (10 holes)
     T3  1.00mm  0.039"  (1 hole)
     T4  1.20mm  0.047"  (2 holes)  (with 2 slots)
 
-    Total plated holes count 94
+    Total plated holes count 95
 
 
 Drill file 'ruuvitag_revb2-NPTH.drl' contains
