@@ -5,7 +5,7 @@
     (no_connects 0)
     (area -0.525001 -3.45 45.525001 45.775001)
     (thickness 1.6)
-    (drawings 133)
+    (drawings 136)
     (tracks 650)
     (zones 0)
     (modules 52)
@@ -39,7 +39,7 @@
   )
 
   (setup
-    (last_trace_width 0.2)
+    (last_trace_width 0.15)
     (user_trace_width 0.15)
     (user_trace_width 0.2)
     (user_trace_width 0.25)
@@ -76,7 +76,7 @@
     (grid_origin 0 0.25)
     (visible_elements FFFEFF7F)
     (pcbplotparams
-      (layerselection 0x010f8_80000007)
+      (layerselection 0x01000_00000000)
       (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.020000)
@@ -3093,6 +3093,9 @@
     )
   )
 
+  (gr_circle (center 34 5.75) (end 33.5 5.75) (layer Edge.Cuts) (width 0.05))
+  (gr_circle (center 37 36.25) (end 37 36.75) (layer Edge.Cuts) (width 0.05))
+  (gr_circle (center 7 30.75) (end 7 31.25) (layer Edge.Cuts) (width 0.05))
   (gr_text B2 (at 19.11 4.77) (layer B.Mask)
     (effects (font (size 0.8 0.9) (thickness 0.15)) (justify mirror))
   )
