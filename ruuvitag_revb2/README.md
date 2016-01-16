@@ -3,10 +3,10 @@
 Changelog after Rev.B1:
 
 * Remove useless pull-up resistor from BUTTON1 (nRF52 has internal ones)
-* Name LED3 to LED2 in schematic
+* Name LED3 to LED2
 * Mark C12 (connected to DEC2 pin) to not assembled
 * Remove SPI DataFlash
-* Remove 0ohm series resistor from antenna
+* Remove 0ohm series resistor from antenna output
 * Remove PI antenna matching network (leave the shunt)
 * 32MHz crystal from 3225 to 2016 size
 * Completely redesigned battery holder mechanism
@@ -15,8 +15,8 @@ Changelog after Rev.B1:
 * Fix accelerometer's footprint (LGA-16) according STM's TN0018 application note. ADXL363 not supported any more (but probably reflows correctly anyways)
 * SPI_ACC_CS from P0.11 to P0.08
 * Remove test pads from P0.26 and P0.27
-* Add test pads to P0.04, P0.05, P0.13, P0.17, P0.19, P0.25, P0.28 and P0.29
-* Update BOM components according Nordic's references
+* Add test pads to P0.04, P0.05, P0.13, P0.17, P0.19, P0.25, P0.28, P0.29, GND, GND, VDD, Bat+, SWO, SWDIO, SWDCLK and RESET
+* Update BOM's critical components according Nordic's reference design
 
 Accelerometer options:
 
