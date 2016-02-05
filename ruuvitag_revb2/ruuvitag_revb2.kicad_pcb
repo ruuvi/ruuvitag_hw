@@ -8,7 +8,7 @@
     (drawings 136)
     (tracks 679)
     (zones 0)
-    (modules 57)
+    (modules 58)
     (nets 35)
   )
 
@@ -3155,6 +3155,21 @@
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+  )
+
+  (module RuuviTag:CR2450-BATTERY-3D (layer F.Cu) (tedit 56B46875) (tstamp 56B7EE85)
+    (at 22.5 22.75)
+    (fp_text reference REF** (at 0 0) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value CR2450-BATTERY-3D (at 0 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (model ${KIPRJMOD}/../kicad_lib/3d/CR2450.wrl
+      (at (xyz 0 0 0.15))
+      (scale (xyz 0.394 0.394 0.394))
+      (rotate (xyz 180 0 180))
     )
   )
 
