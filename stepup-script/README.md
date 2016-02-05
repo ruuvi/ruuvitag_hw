@@ -12,4 +12,4 @@
 3) .step will be created automatically. Done.
 
 ## TODO
-* Create new 3d Models (STEP and VRML). Best way is to export VRML model from STEP using FreeCAD.
+* Create new 3d Models (STEP and VRML). Best way is to export VRML model from STEP using FreeCAD: [YouTube - Kicad StepUp tool: 3D Step and VRML File Alignment to footprint](https://youtu.be/O6vr8QFnYGw).
