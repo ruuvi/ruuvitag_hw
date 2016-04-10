@@ -1,14 +1,12 @@
 # RuuviTag: Open Source Bluetooth Smart Sensor Beacon Platform
-
-[![RuuviTag](https://github.com/ruuvi/ruuvitag_hw/raw/master/ruuvitag_reva1.jpg)](http://ruuvi.com)
-
-[![RuuviTag Factsheet](https://github.com/ruuvi/ruuvi_brand/blob/master/ruuvitag_factsheet_2015/ruuvitag_factsheet_2015.jpg)](http://ruuvi.com)
+[![RuuviTag](http://ruuvitag.com/assets/images/fb_ruuvitag.jpg)](http://ruuvitag.com)
 
 You can find all the RuuviTag hardware design files and related documentation from this repository.
 
 * Rev.A1 is a fully functional device (see ruuvitag_reva1_errata.txt).
 * Rev.A2 has some minor modifications, which are listed in the schematic sheet.
 * Rev.B1 is a completely new design. Radio SoC is Nordic Semiconductor's nRF52.
+* Rev.B2 is an enhanced version of B1. Check the README.md file for more info.
 
 We're using free and open KiCad: http://www.kicad-pcb.org/
 
