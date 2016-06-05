@@ -1,0 +1,416 @@
+Cmp-Mod V01 Created by Cvpcb 0.201505120158+5650~23~ubuntu15.04.1-product   date = ke 20. toukokuuta 2015 16.54.35
+
+BeginCmp
+TimeStamp = /5502889A;
+Reference = C1;
+ValeurCmp = 1u;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E4277;
+Reference = C2;
+ValeurCmp = 1u;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /55030482;
+Reference = C3;
+ValeurCmp = 1u;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /550FA5A7;
+Reference = C4;
+ValeurCmp = 1u;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /550326A7;
+Reference = C5;
+ValeurCmp = 1u;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /551031CA;
+Reference = C6;
+ValeurCmp = 1u;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /550FC1B6;
+Reference = C7;
+ValeurCmp = NA;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /5510D49E;
+Reference = C8;
+ValeurCmp = 1u;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /55111BAB;
+Reference = C9;
+ValeurCmp = 1u;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117636;
+Reference = C10;
+ValeurCmp = 1u;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /5513734F;
+Reference = C11;
+ValeurCmp = 0_ohm_resistor;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /55136850;
+Reference = C12;
+ValeurCmp = NA;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /55030C8D;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = RuuviTag:0402_LED;
+EndCmp
+
+BeginCmp
+TimeStamp = /5502B1D0;
+Reference = L1;
+ValeurCmp = NA;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /5502883C;
+Reference = L2;
+ValeurCmp = 2u2;
+IdModule  = RuuviTag:0603_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /550F9266;
+Reference = L3;
+ValeurCmp = 0_ohm_resistor;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /55028AB0;
+Reference = P1;
+ValeurCmp = SPI_SCK;
+IdModule  = RuuviTag:05MM_PLATED_RECT_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /55028B5F;
+Reference = P2;
+ValeurCmp = P0_1;
+IdModule  = RuuviTag:05MM_PLATED_RECT_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /55028B7F;
+Reference = P3;
+ValeurCmp = P0_2;
+IdModule  = RuuviTag:05MM_PLATED_RECT_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /55028BA1;
+Reference = P4;
+ValeurCmp = P0_3;
+IdModule  = RuuviTag:05MM_PLATED_RECT_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5514EF23;
+Reference = P5;
+ValeurCmp = ENERGY_HARVESTER_GND;
+IdModule  = RuuviTag:WIDE_PLATED_HOLE2;
+EndCmp
+
+BeginCmp
+TimeStamp = /55028BEB;
+Reference = P6;
+ValeurCmp = SPI_MISO;
+IdModule  = RuuviTag:05MM_PLATED_RECT_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /55028C13;
+Reference = P7;
+ValeurCmp = SPI_MOSI;
+IdModule  = RuuviTag:05MM_PLATED_RECT_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /55028C3D;
+Reference = P8;
+ValeurCmp = P0_7;
+IdModule  = RuuviTag:05MM_PLATED_RECT_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /55028C69;
+Reference = P9;
+ValeurCmp = I2C_SCL;
+IdModule  = RuuviTag:05MM_PLATED_RECT_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /55028C9F;
+Reference = P10;
+ValeurCmp = I2C_SDA;
+IdModule  = RuuviTag:05MM_PLATED_RECT_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /55128FDB;
+Reference = P11;
+ValeurCmp = I2C_VDD;
+IdModule  = RuuviTag:05MM_PLATED_RECT_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /55128FE1;
+Reference = P12;
+ValeurCmp = I2C_GND;
+IdModule  = RuuviTag:05MM_PLATED_RECT_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /551676FD;
+Reference = P13;
+ValeurCmp = FIDUCIAL;
+IdModule  = RuuviTag:FIDUCIAL_1MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /551678AF;
+Reference = P14;
+ValeurCmp = FIDUCIAL;
+IdModule  = RuuviTag:FIDUCIAL_1MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /555C3AD8;
+Reference = P15;
+ValeurCmp = GND;
+IdModule  = RuuviTag:RECT_PAD_13X25MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /555C3B9A;
+Reference = P16;
+ValeurCmp = GND;
+IdModule  = RuuviTag:RECT_PAD_13X25MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /555C5874;
+Reference = P17;
+ValeurCmp = BATTERY_TIGHTENER_HOLE;
+IdModule  = RuuviTag:WIDE_MECHANICAL_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5504EE6C;
+Reference = P18;
+ValeurCmp = EXTRNL_PWR_(DURING_FLASHING);
+IdModule  = RuuviTag:09MM_PLATED_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5504EF32;
+Reference = P19;
+ValeurCmp = UART_TX_(FLASHING);
+IdModule  = RuuviTag:09MM_PLATED_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5504EFA8;
+Reference = P20;
+ValeurCmp = UART_RX_(FLASHING);
+IdModule  = RuuviTag:09MM_PLATED_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5504F012;
+Reference = P21;
+ValeurCmp = GND_(FLASHING);
+IdModule  = RuuviTag:09MM_PLATED_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5505E36C;
+Reference = P22;
+ValeurCmp = OTP_6V8_(FLASHING);
+IdModule  = RuuviTag:09MM_PLATED_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5505E3E1;
+Reference = P23;
+ValeurCmp = SWDIO;
+IdModule  = RuuviTag:09MM_PLATED_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5505E470;
+Reference = P24;
+ValeurCmp = SWD_CLK;
+IdModule  = RuuviTag:09MM_PLATED_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5505E477;
+Reference = P25;
+ValeurCmp = RST_(FLASHING);
+IdModule  = RuuviTag:09MM_PLATED_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /55086AF3;
+Reference = P27;
+ValeurCmp = +BATT;
+IdModule  = RuuviTag:WIDE_PLATED_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /55086D7B;
+Reference = P28;
+ValeurCmp = GND;
+IdModule  = RuuviTag:09MM_PLATED_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E7352;
+Reference = P32;
+ValeurCmp = +BATT;
+IdModule  = RuuviTag:WIDE_PLATED_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E73C8;
+Reference = P33;
+ValeurCmp = +BATT;
+IdModule  = RuuviTag:WIDE_PLATED_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E7440;
+Reference = P34;
+ValeurCmp = GND;
+IdModule  = RuuviTag:09MM_PLATED_HOLE;
+EndCmp
+
+BeginCmp
+TimeStamp = /55030D28;
+Reference = R6;
+ValeurCmp = 470;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /55048061;
+Reference = R7;
+ValeurCmp = 10k;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /550480E8;
+Reference = R8;
+ValeurCmp = 10k;
+IdModule  = RuuviTag:0402_GENERAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /5502E2E9;
+Reference = U1;
+ValeurCmp = DA1458X_WLCSP34;
+IdModule  = RuuviTag:WLCSP34;
+EndCmp
+
+BeginCmp
+TimeStamp = /5502FD5C;
+Reference = U2;
+ValeurCmp = GENERIC_DATAFLASH;
+IdModule  = RuuviTag:USON8_2X3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /5505BFA8;
+Reference = U3;
+ValeurCmp = LIS331DLH;
+IdModule  = RuuviTag:LGA16_3X3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /5510CE15;
+Reference = U4;
+ValeurCmp = OPT3001;
+IdModule  = RuuviTag:USON6_2X2MM_WITHTHRMLPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /550D1CAF;
+Reference = U5;
+ValeurCmp = AT30TS74_WLCSP;
+IdModule  = RuuviTag:WLCSP4;
+EndCmp
+
+BeginCmp
+TimeStamp = /550F6E7D;
+Reference = U6;
+ValeurCmp = Si7006;
+IdModule  = RuuviTag:DFN6_3X3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /5510298E;
+Reference = U7;
+ValeurCmp = MS5637;
+IdModule  = RuuviTag:MS5637;
+EndCmp
+
+BeginCmp
+TimeStamp = /551106CB;
+Reference = U8;
+ValeurCmp = UVIS25;
+IdModule  = RuuviTag:UVIS25;
+EndCmp
+
+BeginCmp
+TimeStamp = /55114156;
+Reference = Y1;
+ValeurCmp = 16M;
+IdModule  = RuuviTag:32X25MM_4PIN_CRYSTAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /555C26D0;
+Reference = Y2;
+ValeurCmp = 32K;
+IdModule  = RuuviTag:32X15MM_2PIN_CRYSTAL;
+EndCmp
+
+EndListe
