@@ -41,8 +41,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "RuuviTag"
-Date "2016-01-13"
-Rev "B2"
+Date "2016-06-06"
+Rev "B3"
 Comp "Ruuvi Innovations Ltd. / Lauri Jämsä / lauri@ruuvi.com"
 Comment1 "License: http://creativecommons.org/licenses/by-sa/4.0/"
 Comment2 ""
