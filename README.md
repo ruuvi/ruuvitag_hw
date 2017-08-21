@@ -15,6 +15,6 @@ Copyright: Lauri Jämsä, Ruuvi Innovations Ltd. Neither the name of the RuuviTa
 
 http://ruuvi.com
 
-If interested of what we're doing and would like to join, our Slack team is the best place to start: http://ruuvi.com/blog/ruuvi-slack-com.html
+If interested of what we're doing and would like to join, our Slack team is the best place to start: http://slack.ruuvi.com/
 
 Cheers! :P
