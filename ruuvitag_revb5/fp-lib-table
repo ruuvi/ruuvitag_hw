@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name RuuviTag)(type KiCad)(uri ${KIPRJMOD}/../../kicad-library/RuuviTag.pretty)(options "")(descr ""))
+  (lib (name Ruuvi)(type KiCad)(uri ${KIPRJMOD}/../../kicad-library/Ruuvi.pretty)(options "")(descr ""))
+)

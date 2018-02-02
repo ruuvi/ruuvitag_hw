@@ -1,0 +1,1553 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:generic_dataflash
+LIBS:4pin_crystal
+LIBS:nrf52832
+LIBS:bmxx80
+LIBS:lis3dh
+LIBS:lis2dh12
+LIBS:ruuvitag_revb5-cache
+EELAYER 26 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "RuuviTag"
+Date "2016-12-26"
+Rev "B5"
+Comp "Ruuvi Innovations Ltd. / Lauri Jämsä / lauri@ruuvi.com"
+Comment1 "License: http://creativecommons.org/licenses/by-sa/4.0/"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7400 1400 0    276  Italic 55
+RuuviTag
+$Comp
+L INDUCTOR_SMALL L2
+U 1 1 5502883C
+P 5750 4750
+F 0 "L2" H 6000 4875 50  0000 C CNN
+F 1 "10u" H 5750 4875 50  0000 C CNN
+F 2 "RuuviTag:0603_IND" H 5750 4750 60  0001 C CNN
+F 3 "" H 5750 4750 60  0000 C CNN
+	1    5750 4750
+	-1   0    0    1   
+$EndComp
+Text Notes 7400 3400 0    118  Italic 0
+Bluetooth Smart SoC
+Text Label 9450 4950 0    60   ~ 0
+SPI_MOSI
+Text Label 9450 4650 0    60   ~ 0
+SPI_MISO
+Text Label 9450 4550 0    60   ~ 0
+SPI_SCK
+$Comp
+L LED D1
+U 1 1 55030C8D
+P 2500 4725
+F 0 "D1" H 2500 4825 50  0000 C CNN
+F 1 "LED1" H 2500 4625 50  0000 C CNN
+F 2 "RuuviTag:0603_LED" H 2500 4725 60  0001 C CNN
+F 3 "" H 2500 4725 60  0000 C CNN
+	1    2500 4725
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 55030D28
+P 2050 4725
+F 0 "R1" V 2130 4725 50  0000 C CNN
+F 1 "1k" V 2050 4725 50  0000 C CNN
+F 2 "RuuviTag:0402_RES" V 1980 4725 30  0001 C CNN
+F 3 "" H 2050 4725 30  0000 C CNN
+	1    2050 4725
+	0    1    1    0   
+$EndComp
+Text Notes 1700 4325 0    118  Italic 0
+LEDs & Buttons
+Text Label 11900 3950 0    60   ~ 0
+ANTENNA
+Text Label 7325 8775 2    60   ~ 0
+ANTENNA
+$Comp
+L C C18
+U 1 1 550326A7
+P 12250 6350
+F 0 "C18" H 12275 6450 50  0000 L CNN
+F 1 "4u7" H 12275 6250 50  0000 L CNN
+F 2 "RuuviTag:0603_CAP" H 12288 6200 30  0001 C CNN
+F 3 "" H 12250 6350 60  0000 C CNN
+	1    12250 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 550326B3
+P 12250 6550
+F 0 "#PWR01" H 12250 6300 60  0001 C CNN
+F 1 "GND" H 12250 6400 60  0000 C CNN
+F 2 "" H 12250 6550 60  0000 C CNN
+F 3 "" H 12250 6550 60  0000 C CNN
+	1    12250 6550
+	1    0    0    -1  
+$EndComp
+Text Label 7250 5450 2    60   ~ 0
+ACC_INT1
+Text Notes 12950 2025 0    118  Italic 0
+Power Source
+$Comp
+L VDD #PWR02
+U 1 1 5504318C
+P 12250 6100
+F 0 "#PWR02" H 12250 5950 60  0001 C CNN
+F 1 "VDD" H 12250 6250 60  0000 C CNN
+F 2 "" H 12250 6100 60  0000 C CNN
+F 3 "" H 12250 6100 60  0000 C CNN
+	1    12250 6100
+	1    0    0    -1  
+$EndComp
+Text Label 7250 6050 2    60   ~ 0
+SPI_ACC_CS
+Text Notes 7250 1900 0    98   Italic 20
+Open-Source Sensor Beacon
+Text Notes 7950 2150 0    67   Italic 13
+http://ruuvi.com
+Text Notes 13200 8400 0    118  Italic 0
+Debug In
+Text Notes 12900 5450 0    118  Italic 0
+Accelerometer
+Text Label 9450 5450 0    60   ~ 0
+SWDIO
+Text Label 9450 5550 0    60   ~ 0
+SWDCLK
+Text Label 9450 5650 0    60   ~ 0
+RESET
+$Comp
+L CONN_01X01 P9
+U 1 1 55086AF3
+P 12925 2675
+F 0 "P9" H 13075 2675 50  0000 C CNN
+F 1 "+BATT" H 13275 2675 50  0000 C CNN
+F 2 "RuuviTag:WIDE_PLATED_HOLE" H 12925 2675 60  0001 C CNN
+F 3 "" H 12925 2675 60  0000 C CNN
+	1    12925 2675
+	-1   0    0    1   
+$EndComp
+$Comp
+L VDD #PWR03
+U 1 1 550CECF2
+P 14025 2475
+F 0 "#PWR03" H 14025 2325 60  0001 C CNN
+F 1 "VDD" H 14025 2625 60  0000 C CNN
+F 2 "" H 14025 2475 60  0000 C CNN
+F 3 "" H 14025 2475 60  0000 C CNN
+	1    14025 2475
+	1    0    0    -1  
+$EndComp
+Text Notes 13850 3500 0    39   Italic 0
+Supply voltage: 1V7 - 3V6\nAbsolute maximum: 3V6
+$Comp
+L CONN_01X01 P8
+U 1 1 550E73C8
+P 12925 2575
+F 0 "P8" H 13075 2575 50  0000 C CNN
+F 1 "+BATT" H 13275 2575 50  0000 C CNN
+F 2 "RuuviTag:WIDE_PLATED_HOLE" H 12925 2575 60  0001 C CNN
+F 3 "" H 12925 2575 60  0000 C CNN
+	1    12925 2575
+	-1   0    0    1   
+$EndComp
+Text Label 9450 5850 0    60   ~ 0
+LED2
+Text Label 2950 4725 0    60   ~ 0
+LED1
+$Comp
+L 4PIN_CRYSTAL Y2
+U 1 1 55114156
+P 8400 7150
+F 0 "Y2" H 8400 7300 50  0000 C CNN
+F 1 "32M" H 8400 7025 50  0000 C CNN
+F 2 "RuuviTag:20X16MM_4PIN_CRYSTAL" H 8400 7200 60  0001 C CNN
+F 3 "" H 8400 7200 60  0000 C CNN
+	1    8400 7150
+	1    0    0    -1  
+$EndComp
+Text Notes 6575 10425 0    28   Italic 0
+Nordic Semiconductor's 1/4 wavelength monopole antenna design guide states:\nWhen implementing the monopole as a trace on the PCB, the length of the trace should be extended somewhat to allow for some fine-tuning of the antenna to\nresonance at 2.45GHz. If the size of available ground plane is approaching the ideal size and the antenna trace is uniformly surrounded by the FR4 substrate, then\nthe length of the trace should be extended by about 20%. If the ground plane size is considerably smaller than the ideal size and/or much of the antenna trace is\nrouted close to the edge of the PCB, then the length of the antenna trace should be extended by about 30%. \n\nTheoretical length: L = 92mm / 4 = 23mm      -> 23mm * 1.3 = 30mm.\n\nThere are the following two methods to tune an antenna:\n\n• If the physical dimensions of the antenna can be altered, for example, witha PCB antenna, adjusting the length will be one part of the tuning.\nAnother part is to add a component, inductor, or capacitor, to pull the antenna impedance towards the 50 ohm center point.\n\n• If the antenna cannot be altered physically, more external components must be used to tune the antenna.\nThese external components are called the matching network.\n\nIf it is not possible to get the impedance exactly 50 ohm by adjusting the length of the antenna, a component must be used to pull the impedance to the 50 ohm point.\nIt is preferable to use a shunt capacitor since a capacitor is cheaper than an inductor and because a shunt component can be removed without any impact.\n\nFor more info, check Nordic Semiconductor's White Paper about antenna tuning: Google "nWP-017_Antenna_Tuning"
+$Comp
+L CONN_01X01 P6
+U 1 1 551676FD
+P 11600 10900
+F 0 "P6" H 11750 10900 50  0000 C CNN
+F 1 "FIDUCIAL" H 12050 10900 50  0000 C CNN
+F 2 "RuuviTag:FIDUCIAL_1MM" H 11600 10900 60  0001 C CNN
+F 3 "" H 11600 10900 60  0000 C CNN
+	1    11600 10900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P7
+U 1 1 551678AF
+P 11700 10900
+F 0 "P7" H 11850 10900 50  0000 C CNN
+F 1 "FIDUCIAL" H 12150 10900 50  0000 C CNN
+F 2 "RuuviTag:FIDUCIAL_1MM" H 11700 10900 60  0001 C CNN
+F 3 "" H 11700 10900 60  0000 C CNN
+	1    11700 10900
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 11700 11100
+NoConn ~ 11600 11100
+$Comp
+L nRF52832 U1
+U 1 1 558C64D6
+P 8350 5250
+F 0 "U1" H 7500 3700 60  0000 C CNN
+F 1 "nRF52832" H 9000 3700 60  0000 C CNN
+F 2 "RuuviTag:QFN-48_6X6MM_BOTPAD" H 8350 5750 60  0001 C CNN
+F 3 "" H 8350 5750 60  0000 C CNN
+	1    8350 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal_Small Y1
+U 1 1 558C6F32
+P 5700 5450
+F 0 "Y1" H 5700 5700 50  0000 C CNN
+F 1 "32K" H 5700 5575 50  0000 C CNN
+F 2 "RuuviTag:32X15MM_2PIN_CRYSTAL" H 5700 5450 60  0001 C CNN
+F 3 "" H 5700 5450 60  0000 C CNN
+	1    5700 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 558C7E29
+P 7150 6800
+F 0 "#PWR04" H 7150 6550 60  0001 C CNN
+F 1 "GND" H 7150 6650 60  0000 C CNN
+F 2 "" H 7150 6800 60  0000 C CNN
+F 3 "" H 7150 6800 60  0000 C CNN
+	1    7150 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR05
+U 1 1 558C8C6F
+P 5000 3525
+F 0 "#PWR05" H 5000 3375 60  0001 C CNN
+F 1 "VDD" H 5000 3675 60  0000 C CNN
+F 2 "" H 5000 3525 60  0000 C CNN
+F 3 "" H 5000 3525 60  0000 C CNN
+	1    5000 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C11
+U 1 1 558C8F56
+P 6200 4025
+F 0 "C11" H 6225 3925 50  0000 L CNN
+F 1 "100n" H 6225 4125 50  0000 L CNN
+F 2 "RuuviTag:0402_CAP" H 6238 3875 30  0001 C CNN
+F 3 "" H 6200 4025 60  0000 C CNN
+	1    6200 4025
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C13
+U 1 1 558C96D0
+P 6525 4025
+F 0 "C13" H 6550 3925 50  0000 L CNN
+F 1 "100p" H 6550 4125 50  0000 L CNN
+F 2 "RuuviTag:0402_CAP" H 6563 3875 30  0001 C CNN
+F 3 "" H 6525 4025 60  0000 C CNN
+	1    6525 4025
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C8
+U 1 1 558C9B80
+P 5000 4025
+F 0 "C8" H 5025 3925 50  0000 L CNN
+F 1 "100n" H 5025 4125 50  0000 L CNN
+F 2 "RuuviTag:0402_CAP" H 5038 3875 30  0001 C CNN
+F 3 "" H 5000 4025 60  0000 C CNN
+	1    5000 4025
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C9
+U 1 1 558C9C5B
+P 5325 4025
+F 0 "C9" H 5350 3925 50  0000 L CNN
+F 1 "100n" H 5350 4125 50  0000 L CNN
+F 2 "RuuviTag:0402_CAP" H 5363 3875 30  0001 C CNN
+F 3 "" H 5325 4025 60  0000 C CNN
+	1    5325 4025
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C10
+U 1 1 558C9D2D
+P 5650 4025
+F 0 "C10" H 5675 3925 50  0000 L CNN
+F 1 "4u7" H 5675 4125 50  0000 L CNN
+F 2 "RuuviTag:0603_CAP" H 5688 3875 30  0001 C CNN
+F 3 "" H 5650 4025 60  0000 C CNN
+	1    5650 4025
+	-1   0    0    1   
+$EndComp
+$Comp
+L INDUCTOR_SMALL L1
+U 1 1 558CA653
+P 5750 4650
+F 0 "L1" H 5500 4775 50  0000 C CNN
+F 1 "15n" H 5750 4775 50  0000 C CNN
+F 2 "RuuviTag:0402_IND" H 5750 4650 60  0001 C CNN
+F 3 "" H 5750 4650 60  0000 C CNN
+	1    5750 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 558C97A2
+P 6250 4850
+F 0 "C3" H 6300 4750 50  0000 L CNN
+F 1 "1u" H 6100 4750 50  0000 L CNN
+F 2 "RuuviTag:0402_CAP" H 6288 4700 30  0001 C CNN
+F 3 "" H 6250 4850 60  0000 C CNN
+	1    6250 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 558CFF4D
+P 5550 5700
+F 0 "C4" H 5600 5600 50  0000 L CNN
+F 1 "12p" H 5575 5800 50  0000 L CNN
+F 2 "RuuviTag:0402_CAP" H 5588 5550 30  0001 C CNN
+F 3 "" H 5550 5700 60  0000 C CNN
+	1    5550 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C5
+U 1 1 558D004A
+P 5850 5700
+F 0 "C5" H 5725 5600 50  0000 L CNN
+F 1 "12p" H 5675 5800 50  0000 L CNN
+F 2 "RuuviTag:0402_CAP" H 5888 5550 30  0001 C CNN
+F 3 "" H 5850 5700 60  0000 C CNN
+	1    5850 5700
+	-1   0    0    1   
+$EndComp
+Text Label 7250 4950 2    60   ~ 0
+XC1
+Text Label 7250 5050 2    60   ~ 0
+XC2
+Text Label 8300 7100 2    60   ~ 0
+XC1
+Text Label 8500 7200 0    60   ~ 0
+XC2
+$Comp
+L C C14
+U 1 1 558D465C
+P 7700 7400
+F 0 "C14" H 7725 7500 50  0000 L CNN
+F 1 "12p" H 7725 7300 50  0000 L CNN
+F 2 "RuuviTag:0402_CAP" H 7738 7250 30  0001 C CNN
+F 3 "" H 7700 7400 60  0000 C CNN
+	1    7700 7400
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C6
+U 1 1 558E8962
+P 6400 6425
+F 0 "C6" H 6275 6325 50  0000 L CNN
+F 1 "130p" H 6175 6525 50  0000 L CNN
+F 2 "RuuviTag:0402_CAP" H 6438 6275 30  0001 C CNN
+F 3 "" H 6400 6425 60  0000 C CNN
+	1    6400 6425
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C7
+U 1 1 558E8A9B
+P 6000 6425
+F 0 "C7" H 6025 6525 50  0000 L CNN
+F 1 "130p" H 6025 6325 50  0000 L CNN
+F 2 "RuuviTag:0402_CAP" H 6038 6275 30  0001 C CNN
+F 3 "" H 6000 6425 60  0000 C CNN
+	1    6000 6425
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 558E8B8F
+P 6000 6575
+F 0 "#PWR06" H 6000 6325 60  0001 C CNN
+F 1 "GND" H 6000 6425 60  0000 C CNN
+F 2 "" H 6000 6575 60  0000 C CNN
+F 3 "" H 6000 6575 60  0000 C CNN
+	1    6000 6575
+	1    0    0    -1  
+$EndComp
+Text Notes 5775 6800 2    28   Italic 0
+Battery protection!\n\nIf the antenna is exposed to a strong NFC field\ncurrent may flow in the opposite direction on the\nsupply due to parasitic diodes and ESD structures.\n\nIf the battery used does not tolerate return current,\na series diode must be placed between the battery\nand the device in order to protect the battery.
+$Comp
+L GND #PWR07
+U 1 1 558EF937
+P 11075 4400
+F 0 "#PWR07" H 11075 4150 60  0001 C CNN
+F 1 "GND" H 11075 4250 60  0000 C CNN
+F 2 "" H 11075 4400 60  0000 C CNN
+F 3 "" H 11075 4400 60  0000 C CNN
+	1    11075 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 558F0E05
+P 13575 3175
+F 0 "#PWR08" H 13575 2925 60  0001 C CNN
+F 1 "GND" H 13575 3025 60  0000 C CNN
+F 2 "" H 13575 3175 60  0000 C CNN
+F 3 "" H 13575 3175 60  0000 C CNN
+	1    13575 3175
+	1    0    0    -1  
+$EndComp
+Text Notes 13725 2900 0    28   Italic 0
+Reverse polarity protection circuitry.
+$Comp
+L BMXX80 U2
+U 1 1 558F8B6C
+P 2350 9200
+F 0 "U2" H 1950 8900 60  0000 C CNN
+F 1 "BME280" H 2600 8900 60  0000 C CNN
+F 2 "RuuviTag:BME280" H 2850 8600 60  0001 C CNN
+F 3 "" H 2850 8600 60  0000 C CNN
+	1    2350 9200
+	1    0    0    -1  
+$EndComp
+Text Notes 1000 8500 0    118  Italic 0
+Pressure + Humidity + Temperature
+Text Notes 1625 10075 0    28   Italic 0
+Bosch BME280 = Pressure + humidity + temperature (2,5mm x 2.5mm x 1mm)\n\nAverage current consumption (1Hz data refresh rate):\n1.8 μA @ 1 Hz (H, T)\n2.8 μA @ 1 Hz (P, T)\n3.6 μA @ 1 Hz (H, P, T)\n\nAverage current consumption in sleep mode 0.1 μA\n
+$Comp
+L C C2
+U 1 1 55F918BF
+P 3825 9225
+F 0 "C2" H 3850 9325 50  0000 L CNN
+F 1 "100n" H 3850 9125 50  0000 L CNN
+F 2 "RuuviTag:0402_CAP" H 3863 9075 30  0001 C CNN
+F 3 "" H 3825 9225 60  0000 C CNN
+	1    3825 9225
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 55F918C5
+P 3825 9375
+F 0 "#PWR09" H 3825 9125 60  0001 C CNN
+F 1 "GND" H 3825 9225 60  0000 C CNN
+F 2 "" H 3825 9375 60  0000 C CNN
+F 3 "" H 3825 9375 60  0000 C CNN
+	1    3825 9375
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR010
+U 1 1 55F918CB
+P 3825 9075
+F 0 "#PWR010" H 3825 8925 60  0001 C CNN
+F 1 "VDD" H 3825 9225 60  0000 C CNN
+F 2 "" H 3825 9075 60  0000 C CNN
+F 3 "" H 3825 9075 60  0000 C CNN
+	1    3825 9075
+	1    0    0    -1  
+$EndComp
+Text Label 9450 6050 0    60   ~ 0
+LED1
+$Comp
+L LED D2
+U 1 1 55F9365C
+P 2500 5125
+F 0 "D2" H 2500 5225 50  0000 C CNN
+F 1 "LED2" H 2500 5025 50  0000 C CNN
+F 2 "RuuviTag:0603_LED" H 2500 5125 60  0001 C CNN
+F 3 "" H 2500 5125 60  0000 C CNN
+	1    2500 5125
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 55F93662
+P 2050 5125
+F 0 "R2" V 2130 5125 50  0000 C CNN
+F 1 "1k" V 2050 5125 50  0000 C CNN
+F 2 "RuuviTag:0402_RES" V 1980 5125 30  0001 C CNN
+F 3 "" H 2050 5125 30  0000 C CNN
+	1    2050 5125
+	0    1    1    0   
+$EndComp
+Text Label 2950 5125 0    60   ~ 0
+LED2
+$Comp
+L CONN_02X05 P1
+U 1 1 55F98B6B
+P 13400 9025
+F 0 "P1" H 13400 9325 50  0000 C CNN
+F 1 "ARM_DEBUG" H 13400 8725 50  0000 C CNN
+F 2 "RuuviTag:ARM_DEBUG_CONNECTOR_10PIN" H 13400 7825 60  0001 C CNN
+F 3 "" H 13400 7825 60  0000 C CNN
+	1    13400 9025
+	1    0    0    -1  
+$EndComp
+NoConn ~ 13150 9125
+Text Label 13650 8825 0    60   ~ 0
+SWDIO
+Text Label 13650 8925 0    60   ~ 0
+SWDCLK
+NoConn ~ 13650 9125
+Text Label 13650 9225 0    60   ~ 0
+RESET
+NoConn ~ 9450 5750
+NoConn ~ 9450 6150
+NoConn ~ 9450 6250
+NoConn ~ 9450 6350
+$Comp
+L SW_PUSH SW1
+U 1 1 55F9D378
+P 2350 5575
+F 0 "SW1" H 2500 5685 50  0000 C CNN
+F 1 "SW_PUSH" H 2350 5495 50  0000 C CNN
+F 2 "RuuviTag:SKRKAEE010_BUTTON" H 2350 5575 60  0001 C CNN
+F 3 "" H 2350 5575 60  0000 C CNN
+	1    2350 5575
+	1    0    0    -1  
+$EndComp
+Text Label 2950 5575 0    60   ~ 0
+BUTTON1
+$Comp
+L GND #PWR011
+U 1 1 55F9DFFF
+P 1800 5575
+F 0 "#PWR011" H 1800 5325 60  0001 C CNN
+F 1 "GND" V 1800 5375 60  0000 C CNN
+F 2 "" H 1800 5575 60  0000 C CNN
+F 3 "" H 1800 5575 60  0000 C CNN
+	1    1800 5575
+	0    1    1    0   
+$EndComp
+Text Label 9450 6450 0    60   ~ 0
+BUTTON1
+NoConn ~ 9450 5250
+Text Label 9450 5950 0    60   ~ 0
+SWO
+Text Label 13650 9025 0    60   ~ 0
+SWO
+$Comp
+L PWR_FLAG #FLG012
+U 1 1 55FA70CD
+P 14175 2675
+F 0 "#FLG012" H 14175 2770 50  0001 C CNN
+F 1 "PWR_FLAG" V 14175 3075 50  0000 C CNN
+F 2 "" H 14175 2675 60  0000 C CNN
+F 3 "" H 14175 2675 60  0000 C CNN
+	1    14175 2675
+	0    1    1    0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG013
+U 1 1 55FA75B2
+P 14175 3075
+F 0 "#FLG013" H 14175 3170 50  0001 C CNN
+F 1 "PWR_FLAG" V 14175 3475 50  0000 C CNN
+F 2 "" H 14175 3075 60  0000 C CNN
+F 3 "" H 14175 3075 60  0000 C CNN
+	1    14175 3075
+	0    1    1    0   
+$EndComp
+$Comp
+L VDD #PWR014
+U 1 1 55FA9811
+P 1800 5125
+F 0 "#PWR014" H 1800 4975 60  0001 C CNN
+F 1 "VDD" V 1800 5325 60  0000 C CNN
+F 2 "" H 1800 5125 60  0000 C CNN
+F 3 "" H 1800 5125 60  0000 C CNN
+	1    1800 5125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VDD #PWR015
+U 1 1 55FA98BB
+P 1800 4725
+F 0 "#PWR015" H 1800 4575 60  0001 C CNN
+F 1 "VDD" V 1800 4925 60  0000 C CNN
+F 2 "" H 1800 4725 60  0000 C CNN
+F 3 "" H 1800 4725 60  0000 C CNN
+	1    1800 4725
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_PUSH SW2
+U 1 1 55FAACF3
+P 2350 6025
+F 0 "SW2" H 2500 6135 50  0000 C CNN
+F 1 "SW_PUSH" H 2350 5945 50  0000 C CNN
+F 2 "RuuviTag:SKRKAEE010_BUTTON" H 2350 6025 60  0001 C CNN
+F 3 "" H 2350 6025 60  0000 C CNN
+	1    2350 6025
+	1    0    0    -1  
+$EndComp
+Text Label 2950 6025 0    60   ~ 0
+RESET
+$Comp
+L GND #PWR016
+U 1 1 55FAAD04
+P 1800 6025
+F 0 "#PWR016" H 1800 5775 60  0001 C CNN
+F 1 "GND" V 1800 5825 60  0000 C CNN
+F 2 "" H 1800 6025 60  0000 C CNN
+F 3 "" H 1800 6025 60  0000 C CNN
+	1    1800 6025
+	0    1    1    0   
+$EndComp
+Text Label 7250 5550 2    60   ~ 0
+SPI_HUMI_CS
+Text Label 3000 9350 0    60   ~ 0
+SPI_HUMI_CS
+Text Label 3000 9050 0    60   ~ 0
+SPI_SCK
+Text Label 3000 9250 0    60   ~ 0
+SPI_MOSI
+Text Label 3000 9150 0    60   ~ 0
+SPI_MISO
+$Comp
+L C C19
+U 1 1 55FBEE6D
+P 8325 9025
+F 0 "C19" H 8350 9125 50  0000 L CNN
+F 1 "NA" H 8350 8925 50  0000 L CNN
+F 2 "RuuviTag:0402_CAP" H 8363 8875 30  0001 C CNN
+F 3 "" H 8325 9025 60  0000 C CNN
+	1    8325 9025
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 55FBEE73
+P 8325 9175
+F 0 "#PWR017" H 8325 8925 60  0001 C CNN
+F 1 "GND" H 8325 9025 60  0000 C CNN
+F 2 "" H 8325 9175 60  0000 C CNN
+F 3 "" H 8325 9175 60  0000 C CNN
+	1    8325 9175
+	1    0    0    -1  
+$EndComp
+Text Notes 8000 8200 0    118  Italic 0
+Antenna
+$Comp
+L Q_PMOS_GSD Q1
+U 1 1 560AA9DB
+P 13575 2775
+F 0 "Q1" V 13800 2825 50  0000 R CNN
+F 1 "Q_PMOS_GSD" V 14000 3000 50  0000 R CNN
+F 2 "RuuviTag:SOT-23" H 13775 2875 29  0001 C CNN
+F 3 "" H 13575 2775 60  0000 C CNN
+	1    13575 2775
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 9450 5150
+NoConn ~ 9450 5350
+NoConn ~ 9450 6550
+Text Notes 8600 9075 0    28   Italic 0
+Shunt capacitor or inductor. For convenience, a shunt capacitor is preferred.\nA shunt can be removed without changing the rest of the circuit and a\ncapacitor is cheaper than an inductor.
+$Comp
+L CONN_01X01 P5
+U 1 1 568F6874
+P 12925 3075
+F 0 "P5" H 13050 3075 50  0000 C CNN
+F 1 "GND" H 13225 3075 50  0000 C CNN
+F 2 "RuuviTag:ABG-96_POS_BATT_CONTACT" H 12925 3075 60  0001 C CNN
+F 3 "" H 12925 3075 60  0000 C CNN
+	1    12925 3075
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P4
+U 1 1 560195FE
+P 4550 6200
+F 0 "P4" H 4725 6200 50  0000 C CNN
+F 1 "NFC" H 4900 6200 50  0000 C CNN
+F 2 "RuuviTag:NFC_RUUVITAG_REVB2" H 4550 6200 60  0001 C CNN
+F 3 "" H 4550 6200 60  0000 C CNN
+	1    4550 6200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5694EE23
+P 11075 4150
+F 0 "C1" H 11100 4250 50  0000 L CNN
+F 1 "0p8" H 11100 4050 50  0000 L CNN
+F 2 "RuuviTag:0402_CAP" H 11113 4000 30  0001 C CNN
+F 3 "" H 11075 4150 60  0000 C CNN
+	1    11075 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR_SMALL L3
+U 1 1 5694EF54
+P 11400 3950
+F 0 "L3" H 11400 3875 50  0000 C CNN
+F 1 "3n9" H 11400 4050 50  0000 C CNN
+F 2 "RuuviTag:0402_IND" H 11400 3950 60  0001 C CNN
+F 3 "" H 11400 3950 60  0000 C CNN
+	1    11400 3950
+	1    0    0    -1  
+$EndComp
+Text Notes 10825 3725 0    28   Italic 0
+nRF52 side matching
+Text Notes 4150 5925 0    118  Italic 0
+NFC Coil
+NoConn ~ 9450 4750
+NoConn ~ 9450 4850
+$Comp
+L CONN_01X01 P10
+U 1 1 56962930
+P 6525 5650
+F 0 "P10" H 6825 5650 50  0000 C CNN
+F 1 "TP" H 6650 5650 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 6525 5650 60  0001 C CNN
+F 3 "" H 6525 5650 60  0000 C CNN
+	1    6525 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P11
+U 1 1 56962936
+P 6525 5750
+F 0 "P11" H 6825 5750 50  0000 C CNN
+F 1 "TP" H 6650 5750 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 6525 5750 60  0001 C CNN
+F 3 "" H 6525 5750 60  0000 C CNN
+	1    6525 5750
+	-1   0    0    1   
+$EndComp
+NoConn ~ 7250 5950
+$Comp
+L CONN_01X01 P2
+U 1 1 56976B39
+P 10250 4550
+F 0 "P2" H 10550 4550 50  0000 C CNN
+F 1 "TP" H 10375 4550 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 10250 4550 60  0001 C CNN
+F 3 "" H 10250 4550 60  0000 C CNN
+	1    10250 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P3
+U 1 1 56976D07
+P 10250 4650
+F 0 "P3" H 10550 4650 50  0000 C CNN
+F 1 "TP" H 10375 4650 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 10250 4650 60  0001 C CNN
+F 3 "" H 10250 4650 60  0000 C CNN
+	1    10250 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P12
+U 1 1 56976D9A
+P 10250 4950
+F 0 "P12" H 10550 4950 50  0000 C CNN
+F 1 "TP" H 10375 4950 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 10250 4950 60  0001 C CNN
+F 3 "" H 10250 4950 60  0000 C CNN
+	1    10250 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P15
+U 1 1 56977021
+P 10250 6450
+F 0 "P15" H 10550 6450 50  0000 C CNN
+F 1 "TP" H 10375 6450 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 10250 6450 60  0001 C CNN
+F 3 "" H 10250 6450 60  0000 C CNN
+	1    10250 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P13
+U 1 1 569773CE
+P 10250 5850
+F 0 "P13" H 10550 5850 50  0000 C CNN
+F 1 "TP" H 10375 5850 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 10250 5850 60  0001 C CNN
+F 3 "" H 10250 5850 60  0000 C CNN
+	1    10250 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P14
+U 1 1 56977569
+P 10250 6050
+F 0 "P14" H 10550 6050 50  0000 C CNN
+F 1 "TP" H 10375 6050 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 10250 6050 60  0001 C CNN
+F 3 "" H 10250 6050 60  0000 C CNN
+	1    10250 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P17
+U 1 1 56977D59
+P 14275 2525
+F 0 "P17" H 14575 2525 50  0000 C CNN
+F 1 "TP" H 14400 2525 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 14275 2525 60  0001 C CNN
+F 3 "" H 14275 2525 60  0000 C CNN
+	1    14275 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P16
+U 1 1 56977FCA
+P 12925 2975
+F 0 "P16" H 13225 2975 50  0000 C CNN
+F 1 "TP" H 13050 2975 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 12925 2975 60  0001 C CNN
+F 3 "" H 12925 2975 60  0000 C CNN
+	1    12925 2975
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P18
+U 1 1 56978685
+P 12925 2775
+F 0 "P18" H 13225 2775 50  0000 C CNN
+F 1 "TP" H 13050 2775 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 12925 2775 60  0001 C CNN
+F 3 "" H 12925 2775 60  0000 C CNN
+	1    12925 2775
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P19
+U 1 1 56991422
+P 14200 8825
+F 0 "P19" H 14500 8825 50  0000 C CNN
+F 1 "TP" H 14325 8825 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 14200 8825 60  0001 C CNN
+F 3 "" H 14200 8825 60  0000 C CNN
+	1    14200 8825
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P20
+U 1 1 56991919
+P 14200 8925
+F 0 "P20" H 14500 8925 50  0000 C CNN
+F 1 "TP" H 14325 8925 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 14200 8925 60  0001 C CNN
+F 3 "" H 14200 8925 60  0000 C CNN
+	1    14200 8925
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P21
+U 1 1 569919C4
+P 14200 9025
+F 0 "P21" H 14500 9025 50  0000 C CNN
+F 1 "TP" H 14325 9025 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 14200 9025 60  0001 C CNN
+F 3 "" H 14200 9025 60  0000 C CNN
+	1    14200 9025
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P22
+U 1 1 56991A73
+P 14200 9225
+F 0 "P22" H 14500 9225 50  0000 C CNN
+F 1 "TP" H 14325 9225 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 14200 9225 60  0001 C CNN
+F 3 "" H 14200 9225 60  0000 C CNN
+	1    14200 9225
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P23
+U 1 1 56994E6C
+P 12925 3175
+F 0 "P23" H 13225 3175 50  0000 C CNN
+F 1 "TP" H 13050 3175 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 12925 3175 60  0001 C CNN
+F 3 "" H 12925 3175 60  0000 C CNN
+	1    12925 3175
+	-1   0    0    1   
+$EndComp
+$Comp
+L LIS2DH12 U4
+U 1 1 5752AE2D
+P 13550 6350
+F 0 "U4" H 13550 6937 60  0000 C CNN
+F 1 "LIS2DH12" H 13550 6831 60  0000 C CNN
+F 2 "RuuviTag:LGA12_2X2MM" H 13650 6350 60  0001 C CNN
+F 3 "" H 13650 6350 60  0000 C CNN
+	1    13550 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR018
+U 1 1 5752B1C9
+P 12650 5950
+F 0 "#PWR018" H 12650 5800 50  0001 C CNN
+F 1 "VDD" H 12667 6123 50  0000 C CNN
+F 2 "" H 12650 5950 50  0000 C CNN
+F 3 "" H 12650 5950 50  0000 C CNN
+	1    12650 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR019
+U 1 1 5752B404
+P 12650 6725
+F 0 "#PWR019" H 12650 6475 50  0001 C CNN
+F 1 "GND" H 12655 6552 50  0000 C CNN
+F 2 "" H 12650 6725 50  0000 C CNN
+F 3 "" H 12650 6725 50  0000 C CNN
+	1    12650 6725
+	1    0    0    -1  
+$EndComp
+Text Label 14350 6050 0    60   ~ 0
+ACC_INT1
+Text Label 14350 6150 0    60   ~ 0
+ACC_INT2
+Text Label 14350 6350 0    60   ~ 0
+SPI_ACC_CS
+Text Label 14350 6550 0    60   ~ 0
+SPI_MISO
+Text Label 14350 6450 0    60   ~ 0
+SPI_MOSI
+Text Label 14350 6650 0    60   ~ 0
+SPI_SCK
+Text Label 7250 5850 2    60   ~ 0
+ACC_INT2
+NoConn ~ 9450 6650
+$Comp
+L CONN_01X01 P25
+U 1 1 57C54DB6
+P 10250 4450
+F 0 "P25" H 10550 4450 50  0000 C CNN
+F 1 "TP" H 10375 4450 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 10250 4450 60  0001 C CNN
+F 3 "" H 10250 4450 60  0000 C CNN
+	1    10250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P24
+U 1 1 57C54E77
+P 10250 4350
+F 0 "P24" H 10550 4350 50  0000 C CNN
+F 1 "TP" H 10375 4350 50  0000 C CNN
+F 2 "RuuviTag:TEST_POINT_SMD_1MM" H 10250 4350 60  0001 C CNN
+F 3 "" H 10250 4350 60  0000 C CNN
+	1    10250 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 5863C823
+P 9950 5200
+F 0 "C12" H 9975 5300 50  0000 L CNN
+F 1 "12p" H 9975 5100 50  0000 L CNN
+F 2 "RuuviTag:0402_CAP" H 9988 5050 30  0001 C CNN
+F 3 "" H 9950 5200 60  0000 C CNN
+	1    9950 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 5863CB4A
+P 9950 5350
+F 0 "#PWR020" H 9950 5100 60  0001 C CNN
+F 1 "GND" H 9950 5175 60  0000 C CNN
+F 2 "" H 9950 5350 60  0000 C CNN
+F 3 "" H 9950 5350 60  0000 C CNN
+	1    9950 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR021
+U 1 1 5863DCD1
+P 6250 5000
+F 0 "#PWR021" H 6250 4750 50  0001 C CNN
+F 1 "GND" H 6250 4850 50  0000 C CNN
+F 2 "" H 6250 5000 50  0000 C CNN
+F 3 "" H 6250 5000 50  0000 C CNN
+	1    6250 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 5863E633
+P 6400 6575
+F 0 "#PWR022" H 6400 6325 60  0001 C CNN
+F 1 "GND" H 6400 6425 60  0000 C CNN
+F 2 "" H 6400 6575 60  0000 C CNN
+F 3 "" H 6400 6575 60  0000 C CNN
+	1    6400 6575
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR023
+U 1 1 58641F82
+P 1650 9000
+F 0 "#PWR023" H 1650 8850 50  0001 C CNN
+F 1 "VDD" H 1667 9173 50  0000 C CNN
+F 2 "" H 1650 9000 50  0000 C CNN
+F 3 "" H 1650 9000 50  0000 C CNN
+	1    1650 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 58642512
+P 1650 9400
+F 0 "#PWR024" H 1650 9150 50  0001 C CNN
+F 1 "GND" H 1655 9227 50  0000 C CNN
+F 2 "" H 1650 9400 50  0000 C CNN
+F 3 "" H 1650 9400 50  0000 C CNN
+	1    1650 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 586436D4
+P 7700 7550
+F 0 "#PWR025" H 7700 7300 60  0001 C CNN
+F 1 "GND" H 7700 7400 60  0000 C CNN
+F 2 "" H 7700 7550 60  0000 C CNN
+F 3 "" H 7700 7550 60  0000 C CNN
+	1    7700 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR026
+U 1 1 5864378D
+P 8050 7550
+F 0 "#PWR026" H 8050 7300 60  0001 C CNN
+F 1 "GND" H 8050 7400 60  0000 C CNN
+F 2 "" H 8050 7550 60  0000 C CNN
+F 3 "" H 8050 7550 60  0000 C CNN
+	1    8050 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C16
+U 1 1 558D2342
+P 8750 7400
+F 0 "C16" H 8575 7500 50  0000 L CNN
+F 1 "12p" H 8575 7300 50  0000 L CNN
+F 2 "RuuviTag:0402_CAP" H 8788 7250 30  0001 C CNN
+F 3 "" H 8750 7400 60  0000 C CNN
+	1    8750 7400
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR027
+U 1 1 58643DCA
+P 9100 7550
+F 0 "#PWR027" H 9100 7300 60  0001 C CNN
+F 1 "GND" H 9100 7400 60  0000 C CNN
+F 2 "" H 9100 7550 60  0000 C CNN
+F 3 "" H 9100 7550 60  0000 C CNN
+	1    9100 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR028
+U 1 1 58643F53
+P 8750 7550
+F 0 "#PWR028" H 8750 7300 60  0001 C CNN
+F 1 "GND" H 8750 7400 60  0000 C CNN
+F 2 "" H 8750 7550 60  0000 C CNN
+F 3 "" H 8750 7550 60  0000 C CNN
+	1    8750 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR029
+U 1 1 586445B1
+P 5550 5850
+F 0 "#PWR029" H 5550 5600 60  0001 C CNN
+F 1 "GND" H 5550 5700 60  0000 C CNN
+F 2 "" H 5550 5850 60  0000 C CNN
+F 3 "" H 5550 5850 60  0000 C CNN
+	1    5550 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR030
+U 1 1 5864466A
+P 5850 5850
+F 0 "#PWR030" H 5850 5600 60  0001 C CNN
+F 1 "GND" H 5850 5700 60  0000 C CNN
+F 2 "" H 5850 5850 60  0000 C CNN
+F 3 "" H 5850 5850 60  0000 C CNN
+	1    5850 5850
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	9500 8675 9500 8625
+Wire Notes Line
+	9500 8625 9600 8625
+Wire Notes Line
+	9600 8625 9600 8575
+Wire Notes Line
+	9600 8575 9400 8575
+Wire Notes Line
+	9400 8575 9400 8525
+Wire Notes Line
+	9400 8525 9600 8525
+Wire Notes Line
+	9600 8525 9600 8475
+Wire Notes Line
+	9600 8475 9400 8475
+Wire Notes Line
+	9400 8475 9400 8425
+Wire Notes Line
+	9400 8425 9600 8425
+Wire Notes Line
+	9600 8425 9600 8375
+Wire Notes Line
+	9600 8375 9400 8375
+Wire Notes Line
+	9400 8375 9400 8325
+Wire Notes Line
+	9400 8325 9600 8325
+Wire Notes Line
+	9600 8325 9600 8275
+Wire Notes Line
+	9600 8275 9400 8275
+Wire Notes Line
+	9400 8275 9400 8225
+Wire Notes Line
+	9400 8225 9500 8225
+Wire Wire Line
+	2200 4725 2350 4725
+Wire Wire Line
+	1800 4725 1900 4725
+Wire Wire Line
+	12250 6100 12250 6200
+Wire Wire Line
+	12250 6550 12250 6500
+Wire Wire Line
+	2650 4725 2950 4725
+Wire Wire Line
+	7250 6550 7150 6550
+Wire Wire Line
+	7150 6650 7250 6650
+Connection ~ 7150 6650
+Wire Wire Line
+	7150 6550 7150 6800
+Wire Wire Line
+	7100 4050 7250 4050
+Wire Wire Line
+	7075 4150 7250 4150
+Wire Wire Line
+	7050 4350 7250 4350
+Wire Wire Line
+	7025 4550 7250 4550
+Wire Wire Line
+	5500 4650 5450 4650
+Wire Wire Line
+	5450 4650 5450 4750
+Wire Wire Line
+	5450 4750 5500 4750
+Wire Wire Line
+	6000 4650 7250 4650
+Wire Wire Line
+	6000 4750 7250 4750
+Wire Wire Line
+	5550 5250 5550 5550
+Wire Wire Line
+	5550 5250 7250 5250
+Connection ~ 5550 5450
+Wire Wire Line
+	5850 5350 5850 5550
+Connection ~ 5850 5450
+Wire Wire Line
+	7700 7100 8300 7100
+Wire Wire Line
+	8500 7200 8750 7200
+Wire Wire Line
+	9500 8775 9500 8675
+Wire Wire Line
+	13775 2675 14175 2675
+Wire Wire Line
+	13125 3075 14175 3075
+Wire Wire Line
+	4750 6150 7250 6150
+Wire Wire Line
+	4750 6250 7250 6250
+Connection ~ 6000 6250
+Wire Wire Line
+	2200 5125 2350 5125
+Wire Wire Line
+	1800 5125 1900 5125
+Wire Wire Line
+	2650 5125 2950 5125
+Wire Wire Line
+	5850 5350 7250 5350
+Wire Wire Line
+	2650 5575 2950 5575
+Wire Wire Line
+	1800 5575 2050 5575
+Connection ~ 14025 2675
+Connection ~ 13575 3075
+Wire Wire Line
+	13575 2975 13575 3175
+Wire Wire Line
+	2650 6025 2950 6025
+Wire Wire Line
+	1800 6025 2050 6025
+Wire Wire Line
+	8325 8875 8325 8775
+Connection ~ 8325 8775
+Wire Wire Line
+	13125 2675 13375 2675
+Wire Wire Line
+	7325 8775 9500 8775
+Connection ~ 13175 2675
+Wire Wire Line
+	13125 2575 13175 2575
+Wire Wire Line
+	11075 4000 11075 3950
+Wire Wire Line
+	9450 3950 11150 3950
+Wire Wire Line
+	11075 4300 11075 4400
+Wire Wire Line
+	11075 4350 10900 4350
+Wire Wire Line
+	10900 4350 10900 4050
+Wire Wire Line
+	10900 4050 9450 4050
+Connection ~ 11075 4350
+Connection ~ 11075 3950
+Wire Wire Line
+	11650 3950 11900 3950
+Wire Notes Line
+	10825 4600 10825 3750
+Wire Notes Line
+	10825 3750 11725 3750
+Wire Notes Line
+	11725 3750 11725 4600
+Wire Notes Line
+	11725 4600 10825 4600
+Wire Wire Line
+	10050 4550 9450 4550
+Wire Wire Line
+	9450 4650 10050 4650
+Wire Wire Line
+	9450 4950 10050 4950
+Wire Wire Line
+	10050 6450 9450 6450
+Wire Wire Line
+	10050 6050 9450 6050
+Wire Wire Line
+	9450 5850 10050 5850
+Wire Wire Line
+	13650 8825 14000 8825
+Wire Wire Line
+	14000 8925 13650 8925
+Wire Wire Line
+	13650 9025 14000 9025
+Wire Wire Line
+	14000 9225 13650 9225
+Wire Wire Line
+	12650 5950 12650 6150
+Wire Wire Line
+	12650 6050 12750 6050
+Wire Wire Line
+	12650 6150 12750 6150
+Connection ~ 12650 6050
+Wire Wire Line
+	12650 6350 12650 6725
+Wire Wire Line
+	12650 6650 12750 6650
+Wire Wire Line
+	12650 6550 12750 6550
+Connection ~ 12650 6650
+Wire Wire Line
+	12650 6450 12750 6450
+Connection ~ 12650 6550
+Wire Wire Line
+	12650 6350 12750 6350
+Connection ~ 12650 6450
+Wire Wire Line
+	6725 5750 7250 5750
+Wire Wire Line
+	7250 5650 6725 5650
+Wire Wire Line
+	9450 4350 10050 4350
+Wire Wire Line
+	9450 4450 10050 4450
+Wire Wire Line
+	9950 5050 9950 4950
+Connection ~ 9950 4950
+Connection ~ 6250 4650
+Wire Wire Line
+	6250 4700 6250 4650
+Wire Wire Line
+	6000 6275 6000 6250
+Wire Wire Line
+	6400 6275 6400 6150
+Connection ~ 6400 6150
+Wire Wire Line
+	14075 2525 14025 2525
+Connection ~ 14025 2525
+Wire Wire Line
+	14025 2475 14025 2675
+Wire Wire Line
+	13175 2575 13175 2775
+Wire Wire Line
+	13175 2775 13125 2775
+Wire Wire Line
+	13175 3175 13125 3175
+Wire Wire Line
+	13175 2975 13175 3175
+Connection ~ 13175 3075
+Wire Wire Line
+	13125 2975 13175 2975
+Wire Wire Line
+	1650 9000 1650 9150
+Wire Wire Line
+	1650 9050 1700 9050
+Wire Wire Line
+	1650 9150 1700 9150
+Connection ~ 1650 9050
+Wire Wire Line
+	1650 9250 1650 9400
+Wire Wire Line
+	1650 9250 1700 9250
+Wire Wire Line
+	1650 9350 1700 9350
+Connection ~ 1650 9350
+Wire Wire Line
+	8050 7550 8050 7200
+Wire Wire Line
+	8050 7200 8300 7200
+Wire Wire Line
+	7700 7100 7700 7250
+Wire Wire Line
+	8500 7100 9100 7100
+Wire Wire Line
+	9100 7100 9100 7550
+Wire Wire Line
+	5800 5450 5850 5450
+Wire Wire Line
+	5600 5450 5550 5450
+Wire Wire Line
+	5000 3525 5000 3875
+Wire Wire Line
+	7125 3950 7250 3950
+Wire Wire Line
+	7125 3600 7125 3950
+Wire Wire Line
+	5000 3600 7125 3600
+Connection ~ 5000 3600
+Wire Wire Line
+	5325 3525 5325 3875
+Wire Wire Line
+	5325 3650 7100 3650
+Wire Wire Line
+	7100 3650 7100 4050
+Wire Wire Line
+	5650 3525 5650 3875
+Wire Wire Line
+	5650 3700 7075 3700
+Wire Wire Line
+	7075 3700 7075 4150
+$Comp
+L GND #PWR031
+U 1 1 586487C6
+P 5000 4175
+F 0 "#PWR031" H 5000 3925 50  0001 C CNN
+F 1 "GND" H 5000 4025 50  0000 C CNN
+F 2 "" H 5000 4175 50  0000 C CNN
+F 3 "" H 5000 4175 50  0000 C CNN
+	1    5000 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR032
+U 1 1 5864887F
+P 5325 4175
+F 0 "#PWR032" H 5325 3925 50  0001 C CNN
+F 1 "GND" H 5325 4025 50  0000 C CNN
+F 2 "" H 5325 4175 50  0000 C CNN
+F 3 "" H 5325 4175 50  0000 C CNN
+	1    5325 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR033
+U 1 1 58648938
+P 5650 4175
+F 0 "#PWR033" H 5650 3925 50  0001 C CNN
+F 1 "GND" H 5650 4025 50  0000 C CNN
+F 2 "" H 5650 4175 50  0000 C CNN
+F 3 "" H 5650 4175 50  0000 C CNN
+	1    5650 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR034
+U 1 1 58648FEC
+P 5325 3525
+F 0 "#PWR034" H 5325 3375 60  0001 C CNN
+F 1 "VDD" H 5325 3675 60  0000 C CNN
+F 2 "" H 5325 3525 60  0000 C CNN
+F 3 "" H 5325 3525 60  0000 C CNN
+	1    5325 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR035
+U 1 1 586490A5
+P 5650 3525
+F 0 "#PWR035" H 5650 3375 60  0001 C CNN
+F 1 "VDD" H 5650 3675 60  0000 C CNN
+F 2 "" H 5650 3525 60  0000 C CNN
+F 3 "" H 5650 3525 60  0000 C CNN
+	1    5650 3525
+	1    0    0    -1  
+$EndComp
+Connection ~ 5650 3700
+Connection ~ 5325 3650
+NoConn ~ 7250 4450
+Wire Wire Line
+	7050 4350 7050 3750
+Wire Wire Line
+	7050 3750 6200 3750
+Wire Wire Line
+	6200 3750 6200 3875
+Wire Wire Line
+	6525 3875 6525 3800
+Wire Wire Line
+	6525 3800 7025 3800
+Wire Wire Line
+	7025 3800 7025 4550
+$Comp
+L GND #PWR036
+U 1 1 58649CDA
+P 6200 4175
+F 0 "#PWR036" H 6200 3925 50  0001 C CNN
+F 1 "GND" H 6200 4025 50  0000 C CNN
+F 2 "" H 6200 4175 50  0000 C CNN
+F 3 "" H 6200 4175 50  0000 C CNN
+	1    6200 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR037
+U 1 1 58649D90
+P 6525 4175
+F 0 "#PWR037" H 6525 3925 50  0001 C CNN
+F 1 "GND" H 6525 4025 50  0000 C CNN
+F 2 "" H 6525 4175 50  0000 C CNN
+F 3 "" H 6525 4175 50  0000 C CNN
+	1    6525 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR038
+U 1 1 5864BA1D
+P 13025 9325
+F 0 "#PWR038" H 13025 9075 50  0001 C CNN
+F 1 "GND" H 13030 9152 50  0000 C CNN
+F 2 "" H 13025 9325 50  0000 C CNN
+F 3 "" H 13025 9325 50  0000 C CNN
+	1    13025 9325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13025 9225 13150 9225
+Wire Wire Line
+	13025 8925 13025 9325
+Wire Wire Line
+	13150 9025 13025 9025
+Connection ~ 13025 9225
+Wire Wire Line
+	13150 8925 13025 8925
+Connection ~ 13025 9025
+$Comp
+L VDD #PWR039
+U 1 1 5864BE6C
+P 13025 8775
+F 0 "#PWR039" H 13025 8625 50  0001 C CNN
+F 1 "VDD" H 13042 8948 50  0000 C CNN
+F 2 "" H 13025 8775 50  0000 C CNN
+F 3 "" H 13025 8775 50  0000 C CNN
+	1    13025 8775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13025 8775 13025 8825
+Wire Wire Line
+	13025 8825 13150 8825
+$Comp
+L PWR_FLAG #FLG040
+U 1 1 5864CD6A
+P 5400 4700
+F 0 "#FLG040" H 5400 4795 50  0001 C CNN
+F 1 "PWR_FLAG" V 5400 5100 50  0000 C CNN
+F 2 "" H 5400 4700 60  0000 C CNN
+F 3 "" H 5400 4700 60  0000 C CNN
+	1    5400 4700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 4700 5450 4700
+Connection ~ 5450 4700
+Wire Wire Line
+	8750 7200 8750 7250
+$EndSCHEMATC
