@@ -1,3 +1,4 @@
 # PCBnew backup file
 *.kicad_pcb-bak
 *.bak
+.DS_Store

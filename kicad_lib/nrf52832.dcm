@@ -1,7 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP nRF52832
-K nrf bluetooth smart btle nordic
-$ENDCMP
-#
-#End Doc Library
