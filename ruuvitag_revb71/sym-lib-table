@@ -1,0 +1,9 @@
+(sym_lib_table
+  (lib (name nrf52832)(type Legacy)(uri ${KIPRJMOD}/../../kicad-library/schema-components/nrf52832.lib)(options "")(descr ""))
+  (lib (name 4pin_crystal)(type Legacy)(uri ${KIPRJMOD}/../../kicad-library/schema-components/4pin_crystal.lib)(options "")(descr ""))
+  (lib (name bmxx80)(type Legacy)(uri ${KIPRJMOD}/../../kicad-library/schema-components/bmxx80.lib)(options "")(descr ""))
+  (lib (name lis2dh12)(type Legacy)(uri ${KIPRJMOD}/../../kicad-library/schema-components/lis2dh12.lib)(options "")(descr ""))
+  (lib (name sht3x-dis)(type Legacy)(uri ${KIPRJMOD}/../../kicad-library/schema-components/sht3x-dis.lib)(options "")(descr ""))
+  (lib (name q_dual_nmos_s1g1d2s2g2d1)(type Legacy)(uri ${KIPRJMOD}/../../kicad-library/schema-components/q_dual_nmos_s1g1d2s2g2d1.lib)(options "")(descr ""))
+  (lib (name shtc3)(type Legacy)(uri ${KIPRJMOD}/../../kicad-library/schema-components/shtc3.lib)(options "")(descr ""))
+)
